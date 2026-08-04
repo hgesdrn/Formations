@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: docs   # GitHub Pages servira le site depuis ce dossier
+  resources:
+    - .nojekyll      # empêche GitHub Pages de relancer Jekyll sur le site déjà rendu
 
 website:
   title: "Formations"
