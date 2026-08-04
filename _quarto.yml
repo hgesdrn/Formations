@@ -1,0 +1,32 @@
+project:
+  type: website
+  output-dir: docs   # GitHub Pages servira le site depuis ce dossier
+
+website:
+  title: "Formations"
+  description: "Formations et ateliers en géomatique et analyse de données spatiales."
+  page-navigation: true
+  navbar:
+    background: primary
+    left:
+      - text: "Accueil"
+        href: index.qmd
+      - text: "Formations"
+        menu:
+          - text: "Atelier — Création d'une carte dans ArcGIS Pro"
+            href: atelier-creation-carte/index.qmd
+          - text: "Atelier — Applications terrain"
+            href: atelier-applications-terrain/index.qmd
+  page-footer:
+    left: "© Hugues Dorion"
+    right: "Réalisé avec [Quarto](https://quarto.org)"
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-title: "Sur cette page"
+    toc-depth: 3
+    number-sections: false
+    code-copy: true
+    lang: fr

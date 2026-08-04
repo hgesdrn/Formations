@@ -1,0 +1,14 @@
+# Fichiers Quarto
+/.quarto/
+
+# Fichiers RStudio
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+
+# Système
+.DS_Store
+Thumbs.db
+
+# NE PAS ignorer /docs : c'est le dossier publié par GitHub Pages

@@ -1,0 +1,35 @@
+---
+title: "Formations"
+subtitle: "Ateliers et formations"
+---
+
+Chaque formation ci-dessous est **autonome** : son propre dossier, son
+propre contenu, donnée séparément ou en groupe. Cliquez pour y accéder.
+
+## Liste des formations
+
+::: {.card .mb-3}
+::: {.card-body}
+### [Atelier — Création d'une carte dans ArcGIS Pro](atelier-creation-carte/index.qmd)
+
+Produire une carte de localisation de qualité pour une publication
+scientifique, de la mise en place du projet ArcGIS Pro jusqu'à l'export
+final aux normes des revues.
+
+*Durée : 1 journée*
+:::
+:::
+
+::: {.card .mb-3}
+::: {.card-body}
+### [Atelier — Applications terrain](atelier-applications-terrain/index.qmd)
+
+*(À compléter.)*
+:::
+:::
+
+::: {.callout-note}
+Pour ajouter une formation : créez un nouveau dossier à la racine avec un
+`index.qmd`, puis ajoutez une carte ci-dessus et une entrée au menu dans
+`_quarto.yml`.
+:::

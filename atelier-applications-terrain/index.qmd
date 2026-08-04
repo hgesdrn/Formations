@@ -1,0 +1,40 @@
+---
+title: "Applications terrain"
+subtitle: "Atelier pratique"
+author:
+  - name: "Hugues Dorion"
+    email: hdorion@uqac.ca
+date: last-modified
+date-format: "MMMM YYYY"
+lang: fr
+format:
+  html:
+    toc: true
+number-sections: true
+---
+
+## Contexte de l'atelier {.unnumbered}
+
+[ contenu à compléter — présentez l'objectif et le public visé ]
+
+::: {.callout-note}
+## Données requises
+[ décrire les fichiers / jeux de données fournis ]
+:::
+
+## Première grande étape
+
+a. [ contenu à compléter ]
+b. [ contenu à compléter ]
+
+## Deuxième grande étape
+
+a. [ contenu à compléter ]
+
+::: {.callout-tip}
+[ astuce ou note pratique pour les participants ]
+:::
+
+## Exercices supplémentaires
+
+a. [ contenu à compléter ]
