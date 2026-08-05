@@ -24,7 +24,9 @@ final aux normes des revues.
 ::: {.card-body}
 ### [Atelier — Applications terrain](atelier-applications-terrain/index.qmd)
 
-*(À compléter.)*
+Collecter et gérer des données de terrain avec ArcGIS Online : création de
+« feature layers », et prise en main de Field Maps, Survey123 et
+QuickCapture à travers des exercices pratiques.
 :::
 :::
 
