@@ -1,6 +1,6 @@
 ---
 title: "Création d'une carte dans ArcGIS Pro"
-subtitle: "Formation CEF — Atelier pratique"
+subtitle: "Formation CREB–CEF · UQAC"
 author:
   - name: "Hugues Dorion"
     email: hdorion@uqac.ca
@@ -12,10 +12,189 @@ lang: fr
 format:
   html:
     toc: true
-number-sections: true
+    toc-depth: 3
+number-sections: false
 ---
 
 ![](/images/logo_cef.png){width="120px" fig-alt="Logo du Centre d'étude de la forêt"}
+
+Cet atelier se déroule en deux temps. La partie **Théorie** pose les
+concepts qui font une bonne carte — à quoi elle sert, comment la rendre
+juste et lisible, et quels éléments elle doit contenir. La partie
+**Exercice** met ensuite ces principes en pratique dans ArcGIS Pro, de la
+création du projet jusqu'à l'export pour publication.
+
+::: {.callout-tip}
+## Plan de l'atelier
+1. **Introduction** — « À quoi sert une carte ? »
+2. **Les « ingrédients » d'une carte** — sémiologie graphique (couleurs,
+   formes, textures) et éléments graphiques (nord, grille, légende,
+   échelle, sources), puis des exemples commentés.
+3. **Création d'un gabarit** dans l'affichage *Layout* d'ArcGIS Pro.
+4. **Exercice** de création d'une carte de bout en bout.
+:::
+
+# Théorie
+
+## Introduction - à quoi sert une carte ?
+
+Une carte remplit plusieurs fonctions, souvent simultanément :
+
+- **Orientation et navigation** — se repérer et se déplacer dans l'espace.
+- **Visualisation de données spatiales** — donner à voir un phénomène là
+  où il se produit.
+- **Analyse de données** — faire émerger des motifs, des relations, des
+  tendances géographiques.
+- **Planification territoriale et aménagement** — appuyer des décisions
+  sur le territoire.
+
+::: {.callout-important}
+## Une carte doit être *utile*
+Avant toute chose, une carte doit servir son propos. Chaque élément
+qu'on y ajoute doit aider à comprendre le message ; ce qui ne sert pas la
+compréhension l'encombre.
+:::
+
+## Une carte doit être *vraie* - la question des projections
+
+La Terre est une surface courbe et irrégulière. Pour la représenter à
+plat, on lui applique un procédé mathématique appelé **projection** — et
+toute projection introduit une déformation (des surfaces, des distances,
+des formes ou des angles, selon le cas).
+
+Le piège le plus connu est la projection **Mercator** : en préservant les
+angles, elle dilate énormément les hautes latitudes. Résultat, le
+Groenland y paraît aussi grand que l'Afrique, alors qu'il est environ
+quatorze fois plus petit dans la réalité.
+
+::: {.callout-note}
+## Voir la déformation par soi-même
+- **The True Size Of…** — glissez les pays sur la carte pour comparer
+  leurs tailles réelles : <https://www.thetruesize.com>
+- Mouvement **#CorrectTheMap** — campagne pour des projections plus
+  fidèles aux surfaces réelles.
+:::
+
+On distingue trois grandes familles de projections selon la surface sur
+laquelle on « déroule » le globe : **conique**, **cylindrique** et
+**azimutale (plane)**. Chacune préserve certaines propriétés au détriment
+des autres.
+
+::: {.callout-warning}
+## Le choix de projection n'est jamais neutre
+Choisissez la projection en fonction de ce que la carte doit préserver
+(surfaces exactes ? distances ? formes ?) et de l'étendue représentée.
+Pour le Québec, l'atelier utilise **NAD 1983 Québec Lambert**, un système
+conique conforme adapté à la province.
+:::
+
+## Les ingrédients d'une carte — 2.1 Formes
+
+En géomatique, on distingue **deux modèles** de données :
+
+| | Vectoriel | Matriciel (*raster*) |
+|---|---|---|
+| **Représentation** | Points, lignes, polygones | Grille de cellules (pixels), chacune portant une valeur |
+| **Bien adapté à** | Objets aux contours nets : routes, limites, sites d'inventaire | Phénomènes continus : élévation, température, indices |
+| **Exemple** | Un point par site d'échantillonnage | Une grille d'intensité de feu |
+
+Retenir la logique : le **vectoriel** décrit des *objets* discrets ; le
+**matriciel** décrit un *champ* de valeurs réparti sur une grille.
+
+## Couleurs et échelles de couleurs — 2.1
+
+Une carte **n'est pas neutre** : le choix des couleurs doit s'arrimer au
+phénomène représenté.
+
+- **Données discrètes (catégories)** — on emploie des couleurs *variées*
+  pour distinguer des classes sans ordre entre elles (p. ex. zones de
+  végétation, domaines bioclimatiques). La variation de teinte d'une même
+  couleur sert à marquer des sous-classes.
+- **Données continues (gradation)** — on choisit une **échelle de
+  couleur** ordonnée qui traduit l'intensité du phénomène (p. ex. un
+  dégradé bleu → vert → rouge pour une intensité croissante).
+
+::: {.callout-note}
+## À discuter en atelier
+Pour un phénomène continu donné, plusieurs échelles de couleur sont
+souvent possibles. Laquelle choisir, et pourquoi ? (Lisibilité,
+conventions du domaine, daltonisme, rendu en noir et blanc…)
+
+Sources d'exemples : zones de végétation du MRNF ·
+<https://mrnf.gouv.qc.ca> — cartes d'intensité de feu du SCF/CWFIS ·
+<https://cwfis.cfs.nrcan.gc.ca>
+:::
+
+## Textures et superpositions — 2.1
+
+- **Textures** — certaines revues exigent des cartes en **noir et blanc**.
+  Des trames (hachures, points) remplacent alors les couleurs pour
+  discriminer des classes d'occupation du sol. Les textures servent aussi
+  à alléger l'affichage et à bien circonscrire des aires de répartition.
+- **Superpositions** — combiner des couches donne du relief à la carte.
+  Superposer un fond de végétation et un **ombrage (*hillshade*)** produit
+  un rendu « avec relief » beaucoup plus parlant.
+
+::: {.callout-tip}
+## Pour aller plus loin sur la couleur
+La science et l'art de la couleur en cartographie (choix de palettes pour
+des phénomènes climatiques) :
+<https://donneesclimatiques.ca/nouvelle/la-science-et-lart-de-la-couleur-dans-la-cartographie-du-climat/>
+
+Galerie de cartes QGIS (exemples d'occupation du sol) :
+<https://hub.qgis.org/map-gallery/15/>
+:::
+
+## Les éléments graphiques — 2.2
+
+Une carte complète comporte : le **nord**, une **grille de coordonnées**,
+une **légende**, une **échelle**, les **sources des données** et les
+**auteurs**. Passons en revue les points de vigilance.
+
+### Le nord
+
+Le nord est considéré comme un élément **obligatoire**. Il existe toutefois
+des cas de *nord implicite* acceptables (par convention, le haut de la
+carte = le nord), notamment sur des cartes très standardisées.
+
+### La grille de coordonnées
+
+Une grille aide grandement au repérage, surtout aux **échelles fines**.
+Attention au **système de coordonnées** affiché : une grille en
+coordonnées *projetées* (en mètres) est peu parlante si le lecteur ne
+connaît pas le fuseau. Dans une série de cartes en feuillets, le choix
+doit rester cohérent avec l'ensemble du jeu de données.
+
+### La localisation générale
+
+Un encart de **localisation générale** (index des feuillets, ou simple
+« *zoom out* ») situe l'aire d'étude dans un contexte plus large — c'est
+exactement le rôle de la carte d'emprise qu'on construira dans l'exercice.
+
+### Légende, échelle, sources, auteurs
+
+Ces éléments rendent la carte **auto-portante** : quelqu'un doit pouvoir
+la comprendre sans document d'accompagnement. On y indique aussi la date
+de création et la référence spatiale (projection).
+
+## Exemples — 2.3 : bonnes cartes vs cartes à améliorer
+
+La dernière partie théorique consiste à **examiner des cartes
+existantes** et à les critiquer à la lumière des principes ci-dessus :
+la projection est-elle adaptée ? les couleurs servent-elles le propos ?
+les éléments obligatoires sont-ils présents et lisibles ? la carte est-elle
+auto-portante ?
+
+::: {.callout-note}
+## Exemples présentés en atelier
+Cette section s'appuie sur une série de cartes commentées en direct
+(ex. cartes de viabilité climatique, occupation du sol, sécheresses au
+Canada). Elles proviennent de sources tierces et ne sont pas reproduites
+ici ; insérez vos propres captures ou renvoyez aux sources lors de la
+présentation.
+:::
+
+# Exercice
 
 ## Contexte de l'atelier {.unnumbered}
 

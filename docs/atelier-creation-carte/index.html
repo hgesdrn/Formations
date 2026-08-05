@@ -41,7 +41,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-a957552743cf229cecd72dbee48e5bde.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-0c16822f177ab84cf0ef8b3a1a69854c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -80,6 +80,9 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../images/logo_CEF.png" alt="" class="navbar-logo">
+    </a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Formations</span>
     </a>
@@ -101,11 +104,11 @@ ul.task-list li input[type="checkbox"] {
     <ul class="dropdown-menu" aria-labelledby="nav-menu-formations">    
         <li>
     <a class="dropdown-item" href="../atelier-creation-carte/index.html">
- <span class="dropdown-text">Atelier — Création d’une carte dans ArcGIS Pro</span></a>
+ <span class="dropdown-text">Atelier - Création d’une carte dans ArcGIS Pro</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../atelier-applications-terrain/index.html">
- <span class="dropdown-text">Atelier — Applications terrain</span></a>
+ <span class="dropdown-text">Atelier - Applications terrain</span></a>
   </li>  
     </ul>
   </li>
@@ -125,19 +128,38 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Sur cette page</h2>
    
   <ul>
-  <li><a href="#contexte-de-latelier" id="toc-contexte-de-latelier" class="nav-link active" data-scroll-target="#contexte-de-latelier">Contexte de l’atelier</a>
+  <li><a href="#théorie" id="toc-théorie" class="nav-link active" data-scroll-target="#théorie">Théorie</a>
+  <ul class="collapse">
+  <li><a href="#introduction---à-quoi-sert-une-carte" id="toc-introduction---à-quoi-sert-une-carte" class="nav-link" data-scroll-target="#introduction---à-quoi-sert-une-carte">Introduction - à quoi sert une carte ?</a></li>
+  <li><a href="#une-carte-doit-être-vraie---la-question-des-projections" id="toc-une-carte-doit-être-vraie---la-question-des-projections" class="nav-link" data-scroll-target="#une-carte-doit-être-vraie---la-question-des-projections">Une carte doit être <em>vraie</em> - la question des projections</a></li>
+  <li><a href="#les-ingrédients-dune-carte-2.1-formes" id="toc-les-ingrédients-dune-carte-2.1-formes" class="nav-link" data-scroll-target="#les-ingrédients-dune-carte-2.1-formes">Les ingrédients d’une carte — 2.1 Formes</a></li>
+  <li><a href="#couleurs-et-échelles-de-couleurs-2.1" id="toc-couleurs-et-échelles-de-couleurs-2.1" class="nav-link" data-scroll-target="#couleurs-et-échelles-de-couleurs-2.1">Couleurs et échelles de couleurs — 2.1</a></li>
+  <li><a href="#textures-et-superpositions-2.1" id="toc-textures-et-superpositions-2.1" class="nav-link" data-scroll-target="#textures-et-superpositions-2.1">Textures et superpositions — 2.1</a></li>
+  <li><a href="#les-éléments-graphiques-2.2" id="toc-les-éléments-graphiques-2.2" class="nav-link" data-scroll-target="#les-éléments-graphiques-2.2">Les éléments graphiques — 2.2</a>
+  <ul class="collapse">
+  <li><a href="#le-nord" id="toc-le-nord" class="nav-link" data-scroll-target="#le-nord">Le nord</a></li>
+  <li><a href="#la-grille-de-coordonnées" id="toc-la-grille-de-coordonnées" class="nav-link" data-scroll-target="#la-grille-de-coordonnées">La grille de coordonnées</a></li>
+  <li><a href="#la-localisation-générale" id="toc-la-localisation-générale" class="nav-link" data-scroll-target="#la-localisation-générale">La localisation générale</a></li>
+  <li><a href="#légende-échelle-sources-auteurs" id="toc-légende-échelle-sources-auteurs" class="nav-link" data-scroll-target="#légende-échelle-sources-auteurs">Légende, échelle, sources, auteurs</a></li>
+  </ul></li>
+  <li><a href="#exemples-2.3-bonnes-cartes-vs-cartes-à-améliorer" id="toc-exemples-2.3-bonnes-cartes-vs-cartes-à-améliorer" class="nav-link" data-scroll-target="#exemples-2.3-bonnes-cartes-vs-cartes-à-améliorer">Exemples — 2.3 : bonnes cartes vs cartes à améliorer</a></li>
+  </ul></li>
+  <li><a href="#exercice" id="toc-exercice" class="nav-link" data-scroll-target="#exercice">Exercice</a>
+  <ul class="collapse">
+  <li><a href="#contexte-de-latelier" id="toc-contexte-de-latelier" class="nav-link" data-scroll-target="#contexte-de-latelier">Contexte de l’atelier</a>
   <ul class="collapse">
   <li><a href="#fichiers-nécessaires" id="toc-fichiers-nécessaires" class="nav-link" data-scroll-target="#fichiers-nécessaires">Fichiers nécessaires</a></li>
   </ul></li>
-  <li><a href="#créer-un-projet-dans-arcgis-pro" id="toc-créer-un-projet-dans-arcgis-pro" class="nav-link" data-scroll-target="#créer-un-projet-dans-arcgis-pro"><span class="header-section-number">1</span> Créer un projet dans ArcGIS Pro</a></li>
-  <li><a href="#importer-afficher-et-créer-un-feature-class-à-partir-dun-fichier-excel-ou-csv" id="toc-importer-afficher-et-créer-un-feature-class-à-partir-dun-fichier-excel-ou-csv" class="nav-link" data-scroll-target="#importer-afficher-et-créer-un-feature-class-à-partir-dun-fichier-excel-ou-csv"><span class="header-section-number">2</span> Importer, afficher et créer un <em>feature class</em> à partir d’un fichier Excel ou CSV</a></li>
-  <li><a href="#créer-la-carte-générale-de-localisation-avec-fond-gris-neutre" id="toc-créer-la-carte-générale-de-localisation-avec-fond-gris-neutre" class="nav-link" data-scroll-target="#créer-la-carte-générale-de-localisation-avec-fond-gris-neutre"><span class="header-section-number">3</span> Créer la carte générale de localisation avec fond « gris neutre »</a></li>
-  <li><a href="#créer-une-mise-en-page-cartographique-layout" id="toc-créer-une-mise-en-page-cartographique-layout" class="nav-link" data-scroll-target="#créer-une-mise-en-page-cartographique-layout"><span class="header-section-number">4</span> Créer une mise en page cartographique (<em>layout</em>)</a></li>
-  <li><a href="#ajouter-les-éléments-dhabillage-graphique" id="toc-ajouter-les-éléments-dhabillage-graphique" class="nav-link" data-scroll-target="#ajouter-les-éléments-dhabillage-graphique"><span class="header-section-number">5</span> Ajouter les éléments d’habillage graphique</a></li>
-  <li><a href="#ajouter-une-emprise-contexte-géographique-global" id="toc-ajouter-une-emprise-contexte-géographique-global" class="nav-link" data-scroll-target="#ajouter-une-emprise-contexte-géographique-global"><span class="header-section-number">6</span> Ajouter une emprise — contexte géographique global</a></li>
-  <li><a href="#ajouter-une-légende" id="toc-ajouter-une-légende" class="nav-link" data-scroll-target="#ajouter-une-légende"><span class="header-section-number">7</span> Ajouter une légende</a></li>
-  <li><a href="#exporter-la-carte-dans-un-document" id="toc-exporter-la-carte-dans-un-document" class="nav-link" data-scroll-target="#exporter-la-carte-dans-un-document"><span class="header-section-number">8</span> Exporter la carte dans un document</a></li>
-  <li><a href="#exercices-supplémentaires" id="toc-exercices-supplémentaires" class="nav-link" data-scroll-target="#exercices-supplémentaires"><span class="header-section-number">9</span> Exercices supplémentaires</a></li>
+  <li><a href="#créer-un-projet-dans-arcgis-pro" id="toc-créer-un-projet-dans-arcgis-pro" class="nav-link" data-scroll-target="#créer-un-projet-dans-arcgis-pro">Créer un projet dans ArcGIS Pro</a></li>
+  <li><a href="#importer-afficher-et-créer-un-feature-class-à-partir-dun-fichier-excel-ou-csv" id="toc-importer-afficher-et-créer-un-feature-class-à-partir-dun-fichier-excel-ou-csv" class="nav-link" data-scroll-target="#importer-afficher-et-créer-un-feature-class-à-partir-dun-fichier-excel-ou-csv">Importer, afficher et créer un <em>feature class</em> à partir d’un fichier Excel ou CSV</a></li>
+  <li><a href="#créer-la-carte-générale-de-localisation-avec-fond-gris-neutre" id="toc-créer-la-carte-générale-de-localisation-avec-fond-gris-neutre" class="nav-link" data-scroll-target="#créer-la-carte-générale-de-localisation-avec-fond-gris-neutre">Créer la carte générale de localisation avec fond « gris neutre »</a></li>
+  <li><a href="#créer-une-mise-en-page-cartographique-layout" id="toc-créer-une-mise-en-page-cartographique-layout" class="nav-link" data-scroll-target="#créer-une-mise-en-page-cartographique-layout">Créer une mise en page cartographique (<em>layout</em>)</a></li>
+  <li><a href="#ajouter-les-éléments-dhabillage-graphique" id="toc-ajouter-les-éléments-dhabillage-graphique" class="nav-link" data-scroll-target="#ajouter-les-éléments-dhabillage-graphique">Ajouter les éléments d’habillage graphique</a></li>
+  <li><a href="#ajouter-une-emprise-contexte-géographique-global" id="toc-ajouter-une-emprise-contexte-géographique-global" class="nav-link" data-scroll-target="#ajouter-une-emprise-contexte-géographique-global">Ajouter une emprise — contexte géographique global</a></li>
+  <li><a href="#ajouter-une-légende" id="toc-ajouter-une-légende" class="nav-link" data-scroll-target="#ajouter-une-légende">Ajouter une légende</a></li>
+  <li><a href="#exporter-la-carte-dans-un-document" id="toc-exporter-la-carte-dans-un-document" class="nav-link" data-scroll-target="#exporter-la-carte-dans-un-document">Exporter la carte dans un document</a></li>
+  <li><a href="#exercices-supplémentaires" id="toc-exercices-supplémentaires" class="nav-link" data-scroll-target="#exercices-supplémentaires">Exercices supplémentaires</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -147,7 +169,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Création d’une carte dans ArcGIS Pro</h1>
-<p class="subtitle lead">Formation CEF — Atelier pratique</p>
+<p class="subtitle lead">Formation CREB–CEF · UQAC</p>
 </div>
 
 
@@ -178,6 +200,204 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p><img src="..\images/logo_cef.png" class="img-fluid" alt="Logo du Centre d'étude de la forêt" width="120"></p>
+<p>Cet atelier se déroule en deux temps. La partie <strong>Théorie</strong> pose les concepts qui font une bonne carte — à quoi elle sert, comment la rendre juste et lisible, et quels éléments elle doit contenir. La partie <strong>Exercice</strong> met ensuite ces principes en pratique dans ArcGIS Pro, de la création du projet jusqu’à l’export pour publication.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Plan de l’atelier
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><strong>Introduction</strong> — « À quoi sert une carte ? »</li>
+<li><strong>Les « ingrédients » d’une carte</strong> — sémiologie graphique (couleurs, formes, textures) et éléments graphiques (nord, grille, légende, échelle, sources), puis des exemples commentés.</li>
+<li><strong>Création d’un gabarit</strong> dans l’affichage <em>Layout</em> d’ArcGIS Pro.</li>
+<li><strong>Exercice</strong> de création d’une carte de bout en bout.</li>
+</ol>
+</div>
+</div>
+<section id="théorie" class="level1">
+<h1>Théorie</h1>
+<section id="introduction---à-quoi-sert-une-carte" class="level2">
+<h2 class="anchored" data-anchor-id="introduction---à-quoi-sert-une-carte">Introduction - à quoi sert une carte ?</h2>
+<p>Une carte remplit plusieurs fonctions, souvent simultanément :</p>
+<ul>
+<li><strong>Orientation et navigation</strong> — se repérer et se déplacer dans l’espace.</li>
+<li><strong>Visualisation de données spatiales</strong> — donner à voir un phénomène là où il se produit.</li>
+<li><strong>Analyse de données</strong> — faire émerger des motifs, des relations, des tendances géographiques.</li>
+<li><strong>Planification territoriale et aménagement</strong> — appuyer des décisions sur le territoire.</li>
+</ul>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Une carte doit être <em>utile</em>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Avant toute chose, une carte doit servir son propos. Chaque élément qu’on y ajoute doit aider à comprendre le message ; ce qui ne sert pas la compréhension l’encombre.</p>
+</div>
+</div>
+</section>
+<section id="une-carte-doit-être-vraie---la-question-des-projections" class="level2">
+<h2 class="anchored" data-anchor-id="une-carte-doit-être-vraie---la-question-des-projections">Une carte doit être <em>vraie</em> - la question des projections</h2>
+<p>La Terre est une surface courbe et irrégulière. Pour la représenter à plat, on lui applique un procédé mathématique appelé <strong>projection</strong> — et toute projection introduit une déformation (des surfaces, des distances, des formes ou des angles, selon le cas).</p>
+<p>Le piège le plus connu est la projection <strong>Mercator</strong> : en préservant les angles, elle dilate énormément les hautes latitudes. Résultat, le Groenland y paraît aussi grand que l’Afrique, alors qu’il est environ quatorze fois plus petit dans la réalité.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Voir la déformation par soi-même
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>The True Size Of…</strong> — glissez les pays sur la carte pour comparer leurs tailles réelles : <a href="https://www.thetruesize.com" class="uri">https://www.thetruesize.com</a></li>
+<li>Mouvement <strong>#CorrectTheMap</strong> — campagne pour des projections plus fidèles aux surfaces réelles.</li>
+</ul>
+</div>
+</div>
+<p>On distingue trois grandes familles de projections selon la surface sur laquelle on « déroule » le globe : <strong>conique</strong>, <strong>cylindrique</strong> et <strong>azimutale (plane)</strong>. Chacune préserve certaines propriétés au détriment des autres.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Le choix de projection n’est jamais neutre
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Choisissez la projection en fonction de ce que la carte doit préserver (surfaces exactes ? distances ? formes ?) et de l’étendue représentée. Pour le Québec, l’atelier utilise <strong>NAD 1983 Québec Lambert</strong>, un système conique conforme adapté à la province.</p>
+</div>
+</div>
+</section>
+<section id="les-ingrédients-dune-carte-2.1-formes" class="level2">
+<h2 class="anchored" data-anchor-id="les-ingrédients-dune-carte-2.1-formes">Les ingrédients d’une carte — 2.1 Formes</h2>
+<p>En géomatique, on distingue <strong>deux modèles</strong> de données :</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Vectoriel</th>
+<th>Matriciel (<em>raster</em>)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Représentation</strong></td>
+<td>Points, lignes, polygones</td>
+<td>Grille de cellules (pixels), chacune portant une valeur</td>
+</tr>
+<tr class="even">
+<td><strong>Bien adapté à</strong></td>
+<td>Objets aux contours nets : routes, limites, sites d’inventaire</td>
+<td>Phénomènes continus : élévation, température, indices</td>
+</tr>
+<tr class="odd">
+<td><strong>Exemple</strong></td>
+<td>Un point par site d’échantillonnage</td>
+<td>Une grille d’intensité de feu</td>
+</tr>
+</tbody>
+</table>
+<p>Retenir la logique : le <strong>vectoriel</strong> décrit des <em>objets</em> discrets ; le <strong>matriciel</strong> décrit un <em>champ</em> de valeurs réparti sur une grille.</p>
+</section>
+<section id="couleurs-et-échelles-de-couleurs-2.1" class="level2">
+<h2 class="anchored" data-anchor-id="couleurs-et-échelles-de-couleurs-2.1">Couleurs et échelles de couleurs — 2.1</h2>
+<p>Une carte <strong>n’est pas neutre</strong> : le choix des couleurs doit s’arrimer au phénomène représenté.</p>
+<ul>
+<li><strong>Données discrètes (catégories)</strong> — on emploie des couleurs <em>variées</em> pour distinguer des classes sans ordre entre elles (p.&nbsp;ex. zones de végétation, domaines bioclimatiques). La variation de teinte d’une même couleur sert à marquer des sous-classes.</li>
+<li><strong>Données continues (gradation)</strong> — on choisit une <strong>échelle de couleur</strong> ordonnée qui traduit l’intensité du phénomène (p.&nbsp;ex. un dégradé bleu → vert → rouge pour une intensité croissante).</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+À discuter en atelier
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Pour un phénomène continu donné, plusieurs échelles de couleur sont souvent possibles. Laquelle choisir, et pourquoi ? (Lisibilité, conventions du domaine, daltonisme, rendu en noir et blanc…)</p>
+<p>Sources d’exemples : zones de végétation du MRNF · <a href="https://mrnf.gouv.qc.ca" class="uri">https://mrnf.gouv.qc.ca</a> — cartes d’intensité de feu du SCF/CWFIS · <a href="https://cwfis.cfs.nrcan.gc.ca" class="uri">https://cwfis.cfs.nrcan.gc.ca</a></p>
+</div>
+</div>
+</section>
+<section id="textures-et-superpositions-2.1" class="level2">
+<h2 class="anchored" data-anchor-id="textures-et-superpositions-2.1">Textures et superpositions — 2.1</h2>
+<ul>
+<li><strong>Textures</strong> — certaines revues exigent des cartes en <strong>noir et blanc</strong>. Des trames (hachures, points) remplacent alors les couleurs pour discriminer des classes d’occupation du sol. Les textures servent aussi à alléger l’affichage et à bien circonscrire des aires de répartition.</li>
+<li><strong>Superpositions</strong> — combiner des couches donne du relief à la carte. Superposer un fond de végétation et un <strong>ombrage (<em>hillshade</em>)</strong> produit un rendu « avec relief » beaucoup plus parlant.</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Pour aller plus loin sur la couleur
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>La science et l’art de la couleur en cartographie (choix de palettes pour des phénomènes climatiques) : <a href="https://donneesclimatiques.ca/nouvelle/la-science-et-lart-de-la-couleur-dans-la-cartographie-du-climat/" class="uri">https://donneesclimatiques.ca/nouvelle/la-science-et-lart-de-la-couleur-dans-la-cartographie-du-climat/</a></p>
+<p>Galerie de cartes QGIS (exemples d’occupation du sol) : <a href="https://hub.qgis.org/map-gallery/15/" class="uri">https://hub.qgis.org/map-gallery/15/</a></p>
+</div>
+</div>
+</section>
+<section id="les-éléments-graphiques-2.2" class="level2">
+<h2 class="anchored" data-anchor-id="les-éléments-graphiques-2.2">Les éléments graphiques — 2.2</h2>
+<p>Une carte complète comporte : le <strong>nord</strong>, une <strong>grille de coordonnées</strong>, une <strong>légende</strong>, une <strong>échelle</strong>, les <strong>sources des données</strong> et les <strong>auteurs</strong>. Passons en revue les points de vigilance.</p>
+<section id="le-nord" class="level3">
+<h3 class="anchored" data-anchor-id="le-nord">Le nord</h3>
+<p>Le nord est considéré comme un élément <strong>obligatoire</strong>. Il existe toutefois des cas de <em>nord implicite</em> acceptables (par convention, le haut de la carte = le nord), notamment sur des cartes très standardisées.</p>
+</section>
+<section id="la-grille-de-coordonnées" class="level3">
+<h3 class="anchored" data-anchor-id="la-grille-de-coordonnées">La grille de coordonnées</h3>
+<p>Une grille aide grandement au repérage, surtout aux <strong>échelles fines</strong>. Attention au <strong>système de coordonnées</strong> affiché : une grille en coordonnées <em>projetées</em> (en mètres) est peu parlante si le lecteur ne connaît pas le fuseau. Dans une série de cartes en feuillets, le choix doit rester cohérent avec l’ensemble du jeu de données.</p>
+</section>
+<section id="la-localisation-générale" class="level3">
+<h3 class="anchored" data-anchor-id="la-localisation-générale">La localisation générale</h3>
+<p>Un encart de <strong>localisation générale</strong> (index des feuillets, ou simple « <em>zoom out</em> ») situe l’aire d’étude dans un contexte plus large — c’est exactement le rôle de la carte d’emprise qu’on construira dans l’exercice.</p>
+</section>
+<section id="légende-échelle-sources-auteurs" class="level3">
+<h3 class="anchored" data-anchor-id="légende-échelle-sources-auteurs">Légende, échelle, sources, auteurs</h3>
+<p>Ces éléments rendent la carte <strong>auto-portante</strong> : quelqu’un doit pouvoir la comprendre sans document d’accompagnement. On y indique aussi la date de création et la référence spatiale (projection).</p>
+</section>
+</section>
+<section id="exemples-2.3-bonnes-cartes-vs-cartes-à-améliorer" class="level2">
+<h2 class="anchored" data-anchor-id="exemples-2.3-bonnes-cartes-vs-cartes-à-améliorer">Exemples — 2.3 : bonnes cartes vs cartes à améliorer</h2>
+<p>La dernière partie théorique consiste à <strong>examiner des cartes existantes</strong> et à les critiquer à la lumière des principes ci-dessus : la projection est-elle adaptée ? les couleurs servent-elles le propos ? les éléments obligatoires sont-ils présents et lisibles ? la carte est-elle auto-portante ?</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Exemples présentés en atelier
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Cette section s’appuie sur une série de cartes commentées en direct (ex. cartes de viabilité climatique, occupation du sol, sécheresses au Canada). Elles proviennent de sources tierces et ne sont pas reproduites ici ; insérez vos propres captures ou renvoyez aux sources lors de la présentation.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="exercice" class="level1">
+<h1>Exercice</h1>
 <section id="contexte-de-latelier" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="contexte-de-latelier">Contexte de l’atelier</h2>
 <p>Vous venez de finir l’écriture d’un article scientifique ou de votre mémoire / thèse de fin d’études et vous désirez créer une carte de localisation de tous les points d’inventaire réalisés lors de votre collecte de données terrain. L’objectif est de publier une carte de qualité qui montre la répartition spatiale de vos points d’échantillonnage, ainsi que le contexte plus général dans lequel se trouve votre aire d’étude.</p>
@@ -253,8 +473,8 @@ Données requises
 </table>
 </section>
 </section>
-<section id="créer-un-projet-dans-arcgis-pro" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="créer-un-projet-dans-arcgis-pro"><span class="header-section-number">1</span> Créer un projet dans ArcGIS Pro</h2>
+<section id="créer-un-projet-dans-arcgis-pro" class="level2">
+<h2 class="anchored" data-anchor-id="créer-un-projet-dans-arcgis-pro">Créer un projet dans ArcGIS Pro</h2>
 <ol type="a">
 <li><p>Ouvrir ArcGIS Pro et créer un nouveau projet « Map ».</p></li>
 <li><p>Nommer le projet <strong>« Carte_localisation »</strong> et choisir le dossier (sur votre clé / disque dur externe) où seront vos données. Garder le crochet qui créera un nouveau dossier pour ce projet.</p></li>
@@ -313,8 +533,8 @@ Important
 </div>
 </div>
 </section>
-<section id="importer-afficher-et-créer-un-feature-class-à-partir-dun-fichier-excel-ou-csv" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="importer-afficher-et-créer-un-feature-class-à-partir-dun-fichier-excel-ou-csv"><span class="header-section-number">2</span> Importer, afficher et créer un <em>feature class</em> à partir d’un fichier Excel ou CSV</h2>
+<section id="importer-afficher-et-créer-un-feature-class-à-partir-dun-fichier-excel-ou-csv" class="level2">
+<h2 class="anchored" data-anchor-id="importer-afficher-et-créer-un-feature-class-à-partir-dun-fichier-excel-ou-csv">Importer, afficher et créer un <em>feature class</em> à partir d’un fichier Excel ou CSV</h2>
 <p><em>(Peut aussi être en format <code>.dbf</code> — « data base file ».)</em></p>
 <ol type="a">
 <li><p>Dans la géodatabase du projet, vous constaterez qu’aucun fichier de points ne s’y trouve : le fichier de points est enregistré au format <code>.csv</code>. Deux options s’offrent à vous.</p>
@@ -323,8 +543,8 @@ Important
 <li><p>Une fois l’étape complétée, retournez dans la <code>.gdb</code> maison où vous avez enregistré la couche, clic-droit → <strong>Add to map</strong>.</p></li>
 </ol>
 </section>
-<section id="créer-la-carte-générale-de-localisation-avec-fond-gris-neutre" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="créer-la-carte-générale-de-localisation-avec-fond-gris-neutre"><span class="header-section-number">3</span> Créer la carte générale de localisation avec fond « gris neutre »</h2>
+<section id="créer-la-carte-générale-de-localisation-avec-fond-gris-neutre" class="level2">
+<h2 class="anchored" data-anchor-id="créer-la-carte-générale-de-localisation-avec-fond-gris-neutre">Créer la carte générale de localisation avec fond « gris neutre »</h2>
 <ol type="a">
 <li>Dans le panneau d’arborescence (<em>Drawing order</em>), clic-droit sur <strong>Map → Properties</strong>, puis dans <em>General → Name</em>, renommez la carte <strong>« Carte_site_etude »</strong>.</li>
 <li>Dans cette carte, ajoutez le fond de carte et les couches suivantes :
@@ -344,8 +564,8 @@ Important
 </ol></li>
 </ol>
 </section>
-<section id="créer-une-mise-en-page-cartographique-layout" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="créer-une-mise-en-page-cartographique-layout"><span class="header-section-number">4</span> Créer une mise en page cartographique (<em>layout</em>)</h2>
+<section id="créer-une-mise-en-page-cartographique-layout" class="level2">
+<h2 class="anchored" data-anchor-id="créer-une-mise-en-page-cartographique-layout">Créer une mise en page cartographique (<em>layout</em>)</h2>
 <ol type="a">
 <li><p>Dans l’onglet <strong>Insert → New Layout</strong>, naviguez jusqu’à <strong>Custom page size</strong> (tout en bas du menu déroulant).</p>
 <ol type="i">
@@ -386,8 +606,8 @@ Astuce
 <li><p>Cliquez sur <strong>Map Frame</strong> et sélectionnez la carte « Carte_site_etude ». Tracez la zone de façon qu’elle « snap » sur les guides.</p></li>
 </ol>
 </section>
-<section id="ajouter-les-éléments-dhabillage-graphique" class="level2" data-number="5">
-<h2 data-number="5" class="anchored" data-anchor-id="ajouter-les-éléments-dhabillage-graphique"><span class="header-section-number">5</span> Ajouter les éléments d’habillage graphique</h2>
+<section id="ajouter-les-éléments-dhabillage-graphique" class="level2">
+<h2 class="anchored" data-anchor-id="ajouter-les-éléments-dhabillage-graphique">Ajouter les éléments d’habillage graphique</h2>
 <ol type="a">
 <li>Flèche du nord</li>
 <li>Grille de coordonnées géographiques</li>
@@ -396,8 +616,8 @@ Astuce
 <li>Légende, date, auteurs et sources des données</li>
 </ol>
 </section>
-<section id="ajouter-une-emprise-contexte-géographique-global" class="level2" data-number="6">
-<h2 data-number="6" class="anchored" data-anchor-id="ajouter-une-emprise-contexte-géographique-global"><span class="header-section-number">6</span> Ajouter une emprise — contexte géographique global</h2>
+<section id="ajouter-une-emprise-contexte-géographique-global" class="level2">
+<h2 class="anchored" data-anchor-id="ajouter-une-emprise-contexte-géographique-global">Ajouter une emprise — contexte géographique global</h2>
 <p><em>(Carte à plus petite échelle.)</em></p>
 <ol type="a">
 <li><p>Dans l’onglet <strong>Insert</strong>, créez une <strong>New Map</strong>. Renommez-la <strong>« Carte_generale »</strong>.</p></li>
@@ -455,8 +675,8 @@ Important
 <li><p>Pour enlever les sources du fond de carte : <strong>Insert → Dynamic Text → Service Layer Credits</strong>, puis déplacez-les hors de la page par un <em>clic-glisser</em>.</p></li>
 </ol>
 </section>
-<section id="ajouter-une-légende" class="level2" data-number="7">
-<h2 data-number="7" class="anchored" data-anchor-id="ajouter-une-légende"><span class="header-section-number">7</span> Ajouter une légende</h2>
+<section id="ajouter-une-légende" class="level2">
+<h2 class="anchored" data-anchor-id="ajouter-une-légende">Ajouter une légende</h2>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -503,8 +723,8 @@ Note
 <li><p><strong>Note éditoriale</strong> : gardez vos légendes le plus simple possible ! Le temps de production explose si vous faites un affichage complexe dans ArcGIS Pro. Dans ce cas, privilégiez un logiciel comme <em>Adobe Illustrator</em>.</p></li>
 </ol>
 </section>
-<section id="exporter-la-carte-dans-un-document" class="level2" data-number="8">
-<h2 data-number="8" class="anchored" data-anchor-id="exporter-la-carte-dans-un-document"><span class="header-section-number">8</span> Exporter la carte dans un document</h2>
+<section id="exporter-la-carte-dans-un-document" class="level2">
+<h2 class="anchored" data-anchor-id="exporter-la-carte-dans-un-document">Exporter la carte dans un document</h2>
 <ol type="a">
 <li><p>Quand vous êtes satisfait, exportez la carte (jpg, pdf, emf, etc.) : onglet <strong>Share → Layout</strong> (flèche verte), puis choisissez la résolution, le type de fichier et l’emplacement.</p>
 <div class="callout callout-style-default callout-warning callout-titled">
@@ -524,8 +744,8 @@ Avertissement
 <li><p>C’est le temps d’insérer votre carte dans votre article !</p></li>
 </ol>
 </section>
-<section id="exercices-supplémentaires" class="level2" data-number="9">
-<h2 data-number="9" class="anchored" data-anchor-id="exercices-supplémentaires"><span class="header-section-number">9</span> Exercices supplémentaires</h2>
+<section id="exercices-supplémentaires" class="level2">
+<h2 class="anchored" data-anchor-id="exercices-supplémentaires">Exercices supplémentaires</h2>
 <ol type="a">
 <li>Faire l’habillage de la carte — surtout la création de légende — dans Inkscape ou Adobe Illustrator.</li>
 <li>Intégrer un ou des graphique(s) dans votre carte.</li>
@@ -534,6 +754,7 @@ Avertissement
 </ol>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

@@ -7,8 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Hugues Dorion">
+<meta name="author" content="Mélanie Desrochers">
 
-<title>Applications terrain – Formations</title>
+<title>Applications terrain ESRI – Formations</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -40,7 +41,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-a957552743cf229cecd72dbee48e5bde.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-0c16822f177ab84cf0ef8b3a1a69854c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -79,6 +80,9 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../images/logo_CEF.png" alt="" class="navbar-logo">
+    </a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Formations</span>
     </a>
@@ -100,11 +104,11 @@ ul.task-list li input[type="checkbox"] {
     <ul class="dropdown-menu" aria-labelledby="nav-menu-formations">    
         <li>
     <a class="dropdown-item" href="../atelier-creation-carte/index.html">
- <span class="dropdown-text">Atelier — Création d’une carte dans ArcGIS Pro</span></a>
+ <span class="dropdown-text">Atelier - Création d’une carte dans ArcGIS Pro</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../atelier-applications-terrain/index.html">
- <span class="dropdown-text">Atelier — Applications terrain</span></a>
+ <span class="dropdown-text">Atelier - Applications terrain</span></a>
   </li>  
     </ul>
   </li>
@@ -124,10 +128,79 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Sur cette page</h2>
    
   <ul>
-  <li><a href="#contexte-de-latelier" id="toc-contexte-de-latelier" class="nav-link active" data-scroll-target="#contexte-de-latelier">Contexte de l’atelier</a></li>
-  <li><a href="#première-grande-étape" id="toc-première-grande-étape" class="nav-link" data-scroll-target="#première-grande-étape"><span class="header-section-number">1</span> Première grande étape</a></li>
-  <li><a href="#deuxième-grande-étape" id="toc-deuxième-grande-étape" class="nav-link" data-scroll-target="#deuxième-grande-étape"><span class="header-section-number">2</span> Deuxième grande étape</a></li>
-  <li><a href="#exercices-supplémentaires" id="toc-exercices-supplémentaires" class="nav-link" data-scroll-target="#exercices-supplémentaires"><span class="header-section-number">3</span> Exercices supplémentaires</a></li>
+  <li><a href="#sec-intro" id="toc-sec-intro" class="nav-link active" data-scroll-target="#sec-intro">Introduction</a>
+  <ul class="collapse">
+  <li><a href="#sec-presentateurs" id="toc-sec-presentateurs" class="nav-link" data-scroll-target="#sec-presentateurs">Présentateurs</a>
+  <ul class="collapse">
+  <li><a href="#hugues-dorion" id="toc-hugues-dorion" class="nav-link" data-scroll-target="#hugues-dorion">Hugues Dorion</a></li>
+  <li><a href="#mélanie-desrochers" id="toc-mélanie-desrochers" class="nav-link" data-scroll-target="#mélanie-desrochers">Mélanie Desrochers</a></li>
+  </ul></li>
+  <li><a href="#sec-avant" id="toc-sec-avant" class="nav-link" data-scroll-target="#sec-avant">Avant de commencer</a>
+  <ul class="collapse">
+  <li><a href="#esri-arcgis-online-avez-vous-votre-accès" id="toc-esri-arcgis-online-avez-vous-votre-accès" class="nav-link" data-scroll-target="#esri-arcgis-online-avez-vous-votre-accès">ESRI ArcGIS Online — avez-vous votre accès ?</a></li>
+  <li><a href="#installer-les-applications-mobiles" id="toc-installer-les-applications-mobiles" class="nav-link" data-scroll-target="#installer-les-applications-mobiles">Installer les applications mobiles</a></li>
+  <li><a href="#arcgis-survey123-connect-poste-de-travail" id="toc-arcgis-survey123-connect-poste-de-travail" class="nav-link" data-scroll-target="#arcgis-survey123-connect-poste-de-travail">ArcGIS Survey123 Connect (poste de travail)</a></li>
+  </ul></li>
+  <li><a href="#sec-plan" id="toc-sec-plan" class="nav-link" data-scroll-target="#sec-plan">Plan de l’atelier</a></li>
+  <li><a href="#sec-intro-apps" id="toc-sec-intro-apps" class="nav-link" data-scroll-target="#sec-intro-apps">Introduction — applications terrain</a>
+  <ul class="collapse">
+  <li><a href="#arcgis-online-et-ses-applications" id="toc-arcgis-online-et-ses-applications" class="nav-link" data-scroll-target="#arcgis-online-et-ses-applications">ArcGIS Online et ses applications</a></li>
+  <li><a href="#comparaison-des-trois-applications" id="toc-comparaison-des-trois-applications" class="nav-link" data-scroll-target="#comparaison-des-trois-applications">Comparaison des trois applications</a></li>
+  </ul></li>
+  <li><a href="#sec-univers" id="toc-sec-univers" class="nav-link" data-scroll-target="#sec-univers">L’univers d’ArcGIS Online</a></li>
+  </ul></li>
+  <li><a href="#sec-ex1" id="toc-sec-ex1" class="nav-link" data-scroll-target="#sec-ex1">Exercice 1 — Création de « feature layers »</a>
+  <ul class="collapse">
+  <li><a href="#concept-feature-class-vs-feature-layer" id="toc-concept-feature-class-vs-feature-layer" class="nav-link" data-scroll-target="#concept-feature-class-vs-feature-layer">Concept : Feature Class vs Feature Layer</a></li>
+  <li><a href="#énoncé-de-lexercice" id="toc-énoncé-de-lexercice" class="nav-link" data-scroll-target="#énoncé-de-lexercice">Énoncé de l’exercice</a></li>
+  <li><a href="#étapes" id="toc-étapes" class="nav-link" data-scroll-target="#étapes">Étapes</a>
+  <ul class="collapse">
+  <li><a href="#créer-un-feature-layer-dans-arcgis-online" id="toc-créer-un-feature-layer-dans-arcgis-online" class="nav-link" data-scroll-target="#créer-un-feature-layer-dans-arcgis-online">1) Créer un « feature layer » dans ArcGIS Online</a></li>
+  <li><a href="#configuration-dun-feature-layer" id="toc-configuration-dun-feature-layer" class="nav-link" data-scroll-target="#configuration-dun-feature-layer">2) Configuration d’un « feature layer »</a></li>
+  <li><a href="#créer-une-liste-dans-un-champ" id="toc-créer-une-liste-dans-un-champ" class="nav-link" data-scroll-target="#créer-une-liste-dans-un-champ">3) Créer une liste dans un champ</a></li>
+  <li><a href="#étapes-facultatives-mise-en-style-cartographique" id="toc-étapes-facultatives-mise-en-style-cartographique" class="nav-link" data-scroll-target="#étapes-facultatives-mise-en-style-cartographique">Étapes facultatives — mise en style cartographique</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#sec-ex2" id="toc-sec-ex2" class="nav-link" data-scroll-target="#sec-ex2">Exercice 2 — Phénologie du sapin baumier</a>
+  <ul class="collapse">
+  <li><a href="#contexte-et-objectifs" id="toc-contexte-et-objectifs" class="nav-link" data-scroll-target="#contexte-et-objectifs">Contexte et objectifs</a></li>
+  <li><a href="#énoncé-de-lexercice-1" id="toc-énoncé-de-lexercice-1" class="nav-link" data-scroll-target="#énoncé-de-lexercice-1">Énoncé de l’exercice</a></li>
+  <li><a href="#étapes-1" id="toc-étapes-1" class="nav-link" data-scroll-target="#étapes-1">Étapes</a>
+  <ul class="collapse">
+  <li><a href="#créer-un-dossier-exercice_2-dans-arcgis-online" id="toc-créer-un-dossier-exercice_2-dans-arcgis-online" class="nav-link" data-scroll-target="#créer-un-dossier-exercice_2-dans-arcgis-online">1) Créer un dossier « Exercice_2 » dans ArcGIS Online</a></li>
+  <li><a href="#ouvrir-arcgis-pro-et-importer-les-données-de-la-géodatabase" id="toc-ouvrir-arcgis-pro-et-importer-les-données-de-la-géodatabase" class="nav-link" data-scroll-target="#ouvrir-arcgis-pro-et-importer-les-données-de-la-géodatabase">2) Ouvrir ArcGIS Pro et importer les données de la géodatabase</a></li>
+  <li><a href="#créer-une-web-map-avec-les-données" id="toc-créer-une-web-map-avec-les-données" class="nav-link" data-scroll-target="#créer-une-web-map-avec-les-données">3) Créer une « Web map » avec les données</a></li>
+  <li><a href="#créer-un-nouveau-formulaire-dans-field-maps-designer" id="toc-créer-un-nouveau-formulaire-dans-field-maps-designer" class="nav-link" data-scroll-target="#créer-un-nouveau-formulaire-dans-field-maps-designer">4) Créer un nouveau formulaire dans « Field Maps Designer »</a></li>
+  <li><a href="#création-du-formulaire-pour-chacune-des-deux-couches" id="toc-création-du-formulaire-pour-chacune-des-deux-couches" class="nav-link" data-scroll-target="#création-du-formulaire-pour-chacune-des-deux-couches">5) Création du formulaire pour chacune des deux couches</a></li>
+  <li><a href="#ouvrir-la-carte-et-saisir-des-données" id="toc-ouvrir-la-carte-et-saisir-des-données" class="nav-link" data-scroll-target="#ouvrir-la-carte-et-saisir-des-données">6) Ouvrir la carte et saisir des données</a></li>
+  <li><a href="#acquisition-de-données-dans-votre-projet-fieldmaps" id="toc-acquisition-de-données-dans-votre-projet-fieldmaps" class="nav-link" data-scroll-target="#acquisition-de-données-dans-votre-projet-fieldmaps">7) Acquisition de données dans votre projet FieldMaps !</a></li>
+  <li><a href="#partie-2-formulaire-de-suivi-sondes-hobo-et-cartes-sd" id="toc-partie-2-formulaire-de-suivi-sondes-hobo-et-cartes-sd" class="nav-link" data-scroll-target="#partie-2-formulaire-de-suivi-sondes-hobo-et-cartes-sd">8) Partie 2 — Formulaire de suivi (sondes « HOBO » et cartes SD)</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#sec-ex3" id="toc-sec-ex3" class="nav-link" data-scroll-target="#sec-ex3">Exercice 3 — Inventaire forestier</a>
+  <ul class="collapse">
+  <li><a href="#contexte-et-objectifs-1" id="toc-contexte-et-objectifs-1" class="nav-link" data-scroll-target="#contexte-et-objectifs-1">Contexte et objectifs</a></li>
+  <li><a href="#énoncé-général" id="toc-énoncé-général" class="nav-link" data-scroll-target="#énoncé-général">Énoncé général</a></li>
+  <li><a href="#sec-ex3a" id="toc-sec-ex3a" class="nav-link" data-scroll-target="#sec-ex3a">Partie 1 — QuickCapture (Ex. 3a)</a>
+  <ul class="collapse">
+  <li><a href="#à-partir-de-votre-compte-arcgis-online" id="toc-à-partir-de-votre-compte-arcgis-online" class="nav-link" data-scroll-target="#à-partir-de-votre-compte-arcgis-online">1) À partir de votre compte ArcGIS Online</a></li>
+  <li><a href="#éléments-du-arcgis-quickcapture-designer" id="toc-éléments-du-arcgis-quickcapture-designer" class="nav-link" data-scroll-target="#éléments-du-arcgis-quickcapture-designer">2) Éléments du ArcGIS QuickCapture Designer</a></li>
+  <li><a href="#configurer-lapplication-paramètres-généraux-et-additionnels" id="toc-configurer-lapplication-paramètres-généraux-et-additionnels" class="nav-link" data-scroll-target="#configurer-lapplication-paramètres-généraux-et-additionnels">3) Configurer l’application — paramètres généraux et additionnels</a></li>
+  <li><a href="#configurer-les-sections-de-lapplication" id="toc-configurer-les-sections-de-lapplication" class="nav-link" data-scroll-target="#configurer-les-sections-de-lapplication">4) Configurer les sections de l’application</a></li>
+  <li><a href="#configurer-les-boutons-et-la-saisie-de-données" id="toc-configurer-les-boutons-et-la-saisie-de-données" class="nav-link" data-scroll-target="#configurer-les-boutons-et-la-saisie-de-données">5) Configurer les boutons et la saisie de données</a></li>
+  <li><a href="#sauvegarder-et-utiliser-lapplication" id="toc-sauvegarder-et-utiliser-lapplication" class="nav-link" data-scroll-target="#sauvegarder-et-utiliser-lapplication">6) Sauvegarder et utiliser l’application</a></li>
+  </ul></li>
+  <li><a href="#sec-ex3b" id="toc-sec-ex3b" class="nav-link" data-scroll-target="#sec-ex3b">Partie 2 — Survey123 (Ex. 3b)</a>
+  <ul class="collapse">
+  <li><a href="#à-partir-de-votre-compte-arcgis-online-1" id="toc-à-partir-de-votre-compte-arcgis-online-1" class="nav-link" data-scroll-target="#à-partir-de-votre-compte-arcgis-online-1">1) À partir de votre compte ArcGIS Online</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#sec-fin" id="toc-sec-fin" class="nav-link" data-scroll-target="#sec-fin">Fin de l’atelier</a>
+  <ul class="collapse">
+  <li><a href="#temps-libre" id="toc-temps-libre" class="nav-link" data-scroll-target="#temps-libre">Temps libre</a></li>
+  <li><a href="#votre-prochain-défi" id="toc-votre-prochain-défi" class="nav-link" data-scroll-target="#votre-prochain-défi">Votre prochain défi</a></li>
+  <li><a href="#synthèse" id="toc-synthèse" class="nav-link" data-scroll-target="#synthèse">Synthèse</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -136,8 +209,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Applications terrain</h1>
-<p class="subtitle lead">Atelier pratique</p>
+<h1 class="title">Applications terrain ESRI</h1>
+<p class="subtitle lead">Atelier — Colloque du CEF · UQAR, 6 mai 2025</p>
 </div>
 
 
@@ -145,9 +218,10 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     <div>
-    <div class="quarto-title-meta-heading">Auteur·rice</div>
+    <div class="quarto-title-meta-heading">Auteur·rice·s</div>
     <div class="quarto-title-meta-contents">
              <p>Hugues Dorion <a href="mailto:hdorion@uqac.ca" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+             <p>Mélanie Desrochers <a href="mailto:desrochers.melanie@uqam.ca" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
           </div>
   </div>
     
@@ -166,35 +240,1076 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="contexte-de-latelier" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="contexte-de-latelier">Contexte de l’atelier</h2>
-<p>[ contenu à compléter — présentez l’objectif et le public visé ]</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>À propos de ce document.</strong> Cette page réunit, dans l’ordre chronologique de la présentation, le contenu théorique de l’atelier <strong>et</strong> les exercices pratiques qui l’entrecoupent.</p>
+<p>Les données géospatiales (géodatabases, <code>.aprx</code>, etc.) ne sont pas incluses ici.</p>
+<p>Les emplacements marqués <strong>« IMAGE À REMPLACER »</strong> correspondent à des captures d’écran, logos ou photos susceptibles de poser un problème de droits d’auteur (interfaces ESRI, logos d’applications, photos de produits, etc.). Ce sont des <em>spots vides</em> : chaque légende décrit précisément le visuel attendu, à remplacer par une image dont vous détenez les droits.</p>
+</div>
+</div>
+</div>
+<section id="sec-intro" class="level1">
+<h1>Introduction</h1>
+<section id="sec-presentateurs" class="level2">
+<h2 class="anchored" data-anchor-id="sec-presentateurs">Présentateurs</h2>
+<section id="hugues-dorion" class="level3">
+<h3 class="anchored" data-anchor-id="hugues-dorion">Hugues Dorion</h3>
+<ul>
+<li>B.Sc. Géographie physique et environnements naturels — U. Laval</li>
+<li>M.Sc. Sciences géographiques — U. Laval</li>
+<li>Technicien forestier &amp; analyste d’images satellitaires et de données spatiales — Ress. Nat. Canada &amp; U. Laval (2014–2020)</li>
+<li>Planteur d’arbres, pompier forestier, abatteur manuel, construction de sentiers, analyste de feux de forêts (2020–2024)</li>
+<li>Professionnel de recherche en télédétection &amp; analyse spatiale — Centre d’étude de la forêt, UQAC (2024–…)</li>
+<li>✉️ <a href="mailto:hdorion@uqac.ca">hdorion@uqac.ca</a></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pres_photos_hugues.png" class="img-fluid figure-img"></p>
+<figcaption>Photos personnelles du présentateur.</figcaption>
+</figure>
+</div>
+</section>
+<section id="mélanie-desrochers" class="level3">
+<h3 class="anchored" data-anchor-id="mélanie-desrochers">Mélanie Desrochers</h3>
+<ul>
+<li>B.Sc. Géographie environnementale — U. de Montréal</li>
+<li>M.Sc. Géographie physique — U. de Sherbrooke</li>
+<li>Professionnelle de recherche, géomatique et conservation — Centre d’étude de la forêt, UQAM (2006–…)</li>
+<li>Chargée de cours — Géographie et architecture du paysage, U. de Montréal (2013–…)</li>
+<li>Bénévole senior — Nature Québec</li>
+<li>✉️ <a href="mailto:desrochers.melanie@uqam.ca">desrochers.melanie@uqam.ca</a></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pres_photos_melanie.png" class="img-fluid figure-img"></p>
+<figcaption>Photos personnelles de la co-présentatrice.</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="sec-avant" class="level2">
+<h2 class="anchored" data-anchor-id="sec-avant">Avant de commencer</h2>
+<section id="esri-arcgis-online-avez-vous-votre-accès" class="level3">
+<h3 class="anchored" data-anchor-id="esri-arcgis-online-avez-vous-votre-accès">ESRI ArcGIS Online — avez-vous votre accès ?</h3>
+<p>Rendez-vous sur <a href="https://www.arcgis.com/index.html">https://www.arcgis.com/index.html</a> et assurez-vous d’avoir un accès à votre organisation ArcGIS Online avant l’atelier.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pres_logo_agol.png" class="img-fluid figure-img" style="width:45.0%"></p>
+<figcaption>Logo ArcGIS Online (ESRI).</figcaption>
+</figure>
+</div>
+</section>
+<section id="installer-les-applications-mobiles" class="level3">
+<h3 class="anchored" data-anchor-id="installer-les-applications-mobiles">Installer les applications mobiles</h3>
+<p>Trois applications terrain de la suite ESRI sont utilisées dans l’atelier : <strong>QuickCapture</strong>, <strong>Survey123</strong> et <strong>FieldMaps</strong>. Installez-les au préalable.</p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pres_apps_android.png" class="img-fluid figure-img"></p>
+<figcaption>Android — QuickCapture / Survey123 / FieldMaps.</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pres_apps_ios.png" class="img-fluid figure-img"></p>
+<figcaption>iOS — QuickCapture / Survey123 / FieldMaps.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="arcgis-survey123-connect-poste-de-travail" class="level3">
+<h3 class="anchored" data-anchor-id="arcgis-survey123-connect-poste-de-travail">ArcGIS Survey123 Connect (poste de travail)</h3>
+<p>Module d’édition du formulaire, normalement exécuté <strong>avant</strong> le terrain sur un ordinateur. Il sert essentiellement à éditer la table Excel <code>form.xlsx</code> sous-jacente au formulaire.</p>
+<p>Lien vers le Microsoft Store : <a href="https://apps.microsoft.com/detail/9pmst5c0dlst?hl=en-US&amp;gl=US">apps.microsoft.com/detail/9pmst5c0dlst</a></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pres_survey123_connect.png" class="img-fluid figure-img" style="width:45.0%"></p>
+<figcaption>Logo Survey123 Connect (ESRI) + QR vers le Microsoft Store.</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="sec-plan" class="level2">
+<h2 class="anchored" data-anchor-id="sec-plan">Plan de l’atelier</h2>
+<ol type="1">
+<li><strong>Introduction</strong> — ArcGIS Online et les applications terrain de la suite ESRI.</li>
+<li><strong>Exercices</strong>
+<ul>
+<li><strong>Ex. 1</strong> — ArcGIS Online : création de « feature layers ».</li>
+<li><strong>Ex. 2</strong> — Projet de recherche « Phénologie du sapin baumier ».</li>
+<li><strong>Ex. 3</strong> — Projet de recherche « Inventaire forestier ».</li>
+</ul></li>
+<li><strong>Temps libre</strong> — Tester les applications et/ou construire votre propre application.</li>
+</ol>
+</section>
+<section id="sec-intro-apps" class="level2">
+<h2 class="anchored" data-anchor-id="sec-intro-apps">Introduction — applications terrain</h2>
+<p>On distingue les applications selon qu’elles produisent des <strong>données spatiales</strong> ou <strong>non-spatiales</strong> — certaines font les deux.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pres_venn_apps.png" class="img-fluid figure-img"></p>
+<figcaption>Données spatiales vs non-spatiales : positionnement de différentes applications (QGIS, Google Earth, Avenza, Strava, QField, ArcGIS Earth, KoboToolbox, Excel, PowerApps, Forms, et les apps ESRI).</figcaption>
+</figure>
+</div>
+<section id="arcgis-online-et-ses-applications" class="level3">
+<h3 class="anchored" data-anchor-id="arcgis-online-et-ses-applications">ArcGIS Online et ses applications</h3>
+<p>ArcGIS Online est la plateforme centrale : les trois applications terrain (QuickCapture, Survey123, FieldMaps) s’y connectent pour lire et écrire les données.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pres_agol_ecosystem.png" class="img-fluid figure-img"></p>
+<figcaption>Écosystème ArcGIS Online et ses trois applications terrain.</figcaption>
+</figure>
+</div>
+</section>
+<section id="comparaison-des-trois-applications" class="level3">
+<h3 class="anchored" data-anchor-id="comparaison-des-trois-applications">Comparaison des trois applications</h3>
+<table class="table-striped table-hover caption-top table">
+<caption>Comparaison des fondamentaux — Survey123 / QuickCapture / FieldMaps</caption>
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th><strong>Survey123</strong></th>
+<th><strong>QuickCapture</strong></th>
+<th><strong>FieldMaps</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Spatiale ou non-spatiale ?</strong></td>
+<td>Les deux</td>
+<td>Spatiale (implicitement)</td>
+<td>Spatiale (explicitement)</td>
+</tr>
+<tr class="even">
+<td><strong>À quoi ça ressemble ?</strong></td>
+<td>Remplir des formulaires qui peuvent être complexes</td>
+<td>Saisie rapide, souvent à l’aide de « gros boutons »</td>
+<td>Saisie directement sur une carte, avec les fonctionnalités d’un SIG</td>
+</tr>
+<tr class="odd">
+<td><strong>Édition de données existantes</strong></td>
+<td>Oui</td>
+<td>Non</td>
+<td>Oui</td>
+</tr>
+<tr class="even">
+<td><strong>Édition simultanée de plusieurs couches d’entités</strong></td>
+<td>Non</td>
+<td>Oui</td>
+<td>Non</td>
+</tr>
+<tr class="odd">
+<td><strong>Numérisation d’entités linéaires et surfaciques</strong> (ex. enregistrer un chemin)</td>
+<td>Non (mais oui aussi)</td>
+<td>Oui</td>
+<td>Oui</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="sec-univers" class="level2">
+<h2 class="anchored" data-anchor-id="sec-univers">L’univers d’ArcGIS Online</h2>
+<p>Tour d’horizon de l’interface d’ArcGIS Online et de ses onglets principaux.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pres_agol_home.png" class="img-fluid figure-img"></p>
+<figcaption>Page d’accueil de l’organisation.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pres_agol_gallery.png" class="img-fluid figure-img"></p>
+<figcaption>Onglet <strong>Gallery</strong> — la galerie de contenus partagés.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pres_agol_map.png" class="img-fluid figure-img"></p>
+<figcaption>Onglet <strong>Map</strong> — le Map Viewer.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pres_agol_content.png" class="img-fluid figure-img"></p>
+<figcaption>Onglet <strong>Content</strong> — vos contenus, dossiers et couches.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pres_agol_launcher.png" class="img-fluid figure-img"></p>
+<figcaption>Lanceur d’applications (les 9 petits points) — accès à FieldMaps Designer, QuickCapture, Survey123, etc.</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>Questions ?</strong> — C’est le bon moment pour clarifier l’organisation d’ArcGIS Online avant de passer aux exercices.</p>
+</div>
+</div>
+</div>
+<hr>
+</section>
+</section>
+<section id="sec-ex1" class="level1">
+<h1>Exercice 1 — Création de « feature layers »</h1>
+<section id="concept-feature-class-vs-feature-layer" class="level2">
+<h2 class="anchored" data-anchor-id="concept-feature-class-vs-feature-layer">Concept : Feature Class vs Feature Layer</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pres_fc_fl_diagram.png" class="img-fluid figure-img"></p>
+<figcaption>De la <strong>Feature Class</strong> (donnée stockée dans une géodatabase) au <strong>Feature Layer</strong> (donnée affichée avec symbologie, zoom, etc.). Les types de géométrie : Point, Multipoint, Polyline, Polygon, Multipatch.</figcaption>
+</figure>
+</div>
+<ul>
+<li>La donnée est stockée sous forme de <strong>Feature Class</strong>.</li>
+<li>Lorsqu’elle est affichée dans une <em>Map</em>, en ligne, etc., elle devient un <strong>Feature Layer</strong>, avec une symbologie, un zoom, etc.</li>
+<li>Un même <em>Feature Class</em> peut donc être lié à plusieurs <em>Feature Layers</em>, et chacun peut être sauvegardé séparément (<em>Save as Layer file</em>).</li>
+</ul>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Données requises
+Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>[ décrire les fichiers / jeux de données fournis ]</p>
+<p><strong>Ouvrir le fichier</strong> <code>Ex1_CreationFeatureLayer</code> — l’exercice ci-dessous en reprend l’intégralité du contenu.</p>
 </div>
 </div>
 </section>
-<section id="première-grande-étape" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="première-grande-étape"><span class="header-section-number">1</span> Première grande étape</h2>
+<section id="énoncé-de-lexercice" class="level2">
+<h2 class="anchored" data-anchor-id="énoncé-de-lexercice">Énoncé de l’exercice</h2>
+<p>L’objectif de cet exercice est de vous familiariser avec l’univers d’ArcGIS Online et ses fonctionnalités quant à la création de <strong>couches d’entités</strong> (<em>feature layers</em>). L’exercice couvre la création d’une couche d’entités mais aussi la « bonne conduite » en matière de gestion de données dans ArcGIS Online. <strong>La couche d’entités créée ici servira à l’exercice 3.</strong> Pour le reste de l’atelier, nous utiliserons le terme « feature layer ».</p>
+<p><strong>Fichiers nécessaires :</strong> fichier MS Excel <code>Base_donnee_Ex1_Ex3.xlsx</code>.</p>
+</section>
+<section id="étapes" class="level2">
+<h2 class="anchored" data-anchor-id="étapes">Étapes</h2>
+<section id="créer-un-feature-layer-dans-arcgis-online" class="level3">
+<h3 class="anchored" data-anchor-id="créer-un-feature-layer-dans-arcgis-online">1) Créer un « feature layer » dans ArcGIS Online</h3>
 <ol type="a">
-<li>[ contenu à compléter ]</li>
-<li>[ contenu à compléter ]</li>
+<li>Ouvrir une page web et se connecter à son profil ArcGIS Online : <a href="https://www.arcgis.com/index.html">https://www.arcgis.com/index.html</a>.</li>
+<li>Cliquer sur l’onglet <strong>Content</strong> et créer un dossier dans lequel le feature layer sera enregistré. L’appeler <strong><code>Exercice_1</code></strong>.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ex1_content_newfolder.png" class="img-fluid figure-img"></p>
+<figcaption>Onglet Content : création du dossier <code>Exercice_1</code>.</figcaption>
+</figure>
+</div>
+<ol start="3" type="a">
+<li>Une fois le dossier <code>Exercice_1</code> créé, y entrer (il est vide) et cliquer sur <strong>New Item</strong>.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ex1_folder_newitem.png" class="img-fluid figure-img"></p>
+<figcaption>Dossier <code>Exercice_1</code> vide → bouton <strong>New Item</strong>.</figcaption>
+</figure>
+</div>
+<ol start="4" type="a">
+<li>Choisir l’option <strong>Feature layer</strong>.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ex1_newitem_featurelayer.png" class="img-fluid figure-img"></p>
+<figcaption>Fenêtre <strong>New Item</strong> → option <strong>Feature layer</strong>.</figcaption>
+</figure>
+</div>
+<ol start="5" type="a">
+<li>Cliquer sur <strong>Define your own layer</strong>, puis sur <strong>Next</strong>.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ex1_define_own.png" class="img-fluid figure-img"></p>
+<figcaption><strong>Define your own layer</strong> → <strong>Next</strong>.</figcaption>
+</figure>
+</div>
+<ol start="6" type="a">
+<li><p>Le menu <strong>Create a feature layer</strong> s’ouvre et permet de créer l’ensemble des <em>feature class</em> nécessaires au projet. Pour cet exercice, créer <strong>4 couches supplémentaires</strong> avec les noms et topologies suivants :</p>
+<ul>
+<li><code>Donnee_generale</code> (point)</li>
+<li><code>Inv_forestier</code> (point)</li>
+<li><code>Chemin_acces</code> (ligne)</li>
+<li><code>Contour_placette</code> (polygone)</li>
+</ul></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ex1_create_featurelayer.png" class="img-fluid figure-img"></p>
+<figcaption>Menu <strong>Create a feature layer</strong> : ajout des 4 couches.</figcaption>
+</figure>
+</div>
+<ol start="7" type="a">
+<li>Une fois la saisie des couches complétée, cliquer sur <strong>Next</strong>. Donner le nom <strong><code>Placette_inv_CN2025</code></strong> au feature layer et l’enregistrer dans le dossier <code>Exercice_1</code>.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ex1_name_save.png" class="img-fluid figure-img"></p>
+<figcaption>Nommage <code>Placette_inv_CN2025</code> et enregistrement dans le dossier <code>Exercice_1</code>.</figcaption>
+</figure>
+</div>
+<ol start="8" type="a">
+<li>Le nouveau feature layer est créé : c’est dans cette fenêtre contextuelle que vous complétez la <strong>description</strong> du fichier. Si le fichier doit être partagé, ajoutez un maximum d’informations afin que les autres utilisateurs comprennent bien les tenants et aboutissants du feature layer.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ex1_description.png" class="img-fluid figure-img"></p>
+<figcaption>Fenêtre de description du nouveau feature layer.</figcaption>
+</figure>
+</div>
+</section>
+<section id="configuration-dun-feature-layer" class="level3">
+<h3 class="anchored" data-anchor-id="configuration-dun-feature-layer">2) Configuration d’un « feature layer »</h3>
+<p>Un fichier MS Excel vous a été fourni : consultez-le pour connaître les champs à créer dans chaque classe d’entités. <strong>Chaque feuille/onglet du fichier Excel correspond à une couche du feature layer</strong> (voir <code>Base_donnee_Ex1_Ex3.xlsx</code>).</p>
+<ol type="a">
+<li>Dans l’onglet <strong>Data</strong>, cliquer sur <strong>Fields</strong>.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ex1_data_fields.png" class="img-fluid figure-img"></p>
+<figcaption>Onglet <strong>Data</strong> → <strong>Fields</strong>.</figcaption>
+</figure>
+</div>
+<ol start="2" type="a">
+<li>Pour ajouter de nouveaux champs, cliquer sur <strong>+ Add</strong>.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ex1_add_field.png" class="img-fluid figure-img" style="width:55.0%"></p>
+<figcaption>Bouton <strong>+ Add</strong>.</figcaption>
+</figure>
+</div>
+<ol start="3" type="a">
+<li>Ajouter l’ensemble des champs inclus dans la base de données fournie. Pour chaque nouveau champ, cliquer sur <strong>+ Add</strong> jusqu’à obtenir la liste complète.</li>
+</ol>
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>Référence des champs</strong> (feuille <code>Metadonnee</code> du fichier Excel) :</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Couche</th>
+<th>Champ</th>
+<th>Nom</th>
+<th>Type</th>
+<th>Longueur</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Donnee_generale</td>
+<td><code>ID_placette</code></td>
+<td>Identifiant placette</td>
+<td>Texte</td>
+<td>25</td>
+<td>Identifiant unique de chaque placette</td>
+</tr>
+<tr class="even">
+<td>Donnee_generale</td>
+<td><code>Date_inv</code></td>
+<td>Date de l’inventaire</td>
+<td>Date</td>
+<td>—</td>
+<td>Date de l’inventaire (sans les heures)</td>
+</tr>
+<tr class="odd">
+<td>Donnee_generale</td>
+<td><code>X_p</code></td>
+<td>Longitude</td>
+<td>Double</td>
+<td>—</td>
+<td>Coordonnée géographique</td>
+</tr>
+<tr class="even">
+<td>Donnee_generale</td>
+<td><code>Y_p</code></td>
+<td>Latitude</td>
+<td>Double</td>
+<td>—</td>
+<td>Coordonnée géographique</td>
+</tr>
+<tr class="odd">
+<td>Donnee_generale</td>
+<td><code>Altitude</code></td>
+<td>Altitude</td>
+<td>Double</td>
+<td>—</td>
+<td>Altitude GPS</td>
+</tr>
+<tr class="even">
+<td>Donnee_generale</td>
+<td><code>Aspect</code></td>
+<td>Aspect (exposition)</td>
+<td>Double</td>
+<td>25</td>
+<td>Exposition de la pente</td>
+</tr>
+<tr class="odd">
+<td>Inv_forestier</td>
+<td><code>ID_placette</code></td>
+<td>Identifiant placette</td>
+<td>Texte</td>
+<td>25</td>
+<td>Identifiant unique de chaque placette</td>
+</tr>
+<tr class="even">
+<td>Inv_forestier</td>
+<td><code>Ess_arbre</code></td>
+<td>Essence d’arbre</td>
+<td>Texte</td>
+<td>50</td>
+<td>Nom de l’espèce d’arbre</td>
+</tr>
+<tr class="odd">
+<td>Inv_forestier</td>
+<td><code>DHP</code></td>
+<td>DHP</td>
+<td>Double</td>
+<td>—</td>
+<td>Diamètre à hauteur de poitrine</td>
+</tr>
+<tr class="even">
+<td>Inv_forestier</td>
+<td><code>Nv_defo</code></td>
+<td>Niveau de défoliation</td>
+<td>Entier</td>
+<td>—</td>
+<td>Défoliation par la TBE (0 = 0 % ; 1 = &lt;25 % ; 2 = 25–50 % ; 3 = &gt;50 %)</td>
+</tr>
+<tr class="odd">
+<td>Chemin_acces</td>
+<td><code>ID_placette</code></td>
+<td>Identifiant placette</td>
+<td>Texte</td>
+<td>25</td>
+<td>Identifiant unique de chaque placette</td>
+</tr>
+<tr class="even">
+<td>Contour_placette</td>
+<td><code>ID_placette</code></td>
+<td>Identifiant placette</td>
+<td>Texte</td>
+<td>25</td>
+<td>Identifiant unique de chaque placette</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="créer-une-liste-dans-un-champ" class="level3">
+<h3 class="anchored" data-anchor-id="créer-une-liste-dans-un-champ">3) Créer une liste dans un champ</h3>
+<ol type="a">
+<li>Cliquer sur le champ <strong><code>Ess_arbre</code></strong> créé à l’étape précédente.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ex1_ess_arbre.png" class="img-fluid figure-img"></p>
+<figcaption>Sélection du champ <code>Ess_arbre</code>.</figcaption>
+</figure>
+</div>
+<ol start="2" type="a">
+<li>Cliquer sur <strong>Create list</strong>.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ex1_create_list.png" class="img-fluid figure-img" style="width:55.0%"></p>
+<figcaption>Bouton <strong>Create list</strong>.</figcaption>
+</figure>
+</div>
+<ol start="3" type="a">
+<li>Saisir l’ensemble des espèces ligneuses à inventorier. Une fois la liste complète, <strong>sauvegarder</strong> la liste.</li>
 </ol>
 </section>
-<section id="deuxième-grande-étape" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="deuxième-grande-étape"><span class="header-section-number">2</span> Deuxième grande étape</h2>
-<ol type="a">
-<li>[ contenu à compléter ]</li>
+<section id="étapes-facultatives-mise-en-style-cartographique" class="level3">
+<h3 class="anchored" data-anchor-id="étapes-facultatives-mise-en-style-cartographique">Étapes facultatives — mise en style cartographique</h3>
+<ol start="4" type="a">
+<li>Cliquer sur l’onglet <strong>Visualization</strong> afin de passer en mode d’affichage cartographique du feature layer <code>Inv_forestier</code>.</li>
 </ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ex1_visualization.png" class="img-fluid figure-img"></p>
+<figcaption>Onglet <strong>Visualization</strong> (affichage cartographique).</figcaption>
+</figure>
+</div>
+<ol start="5" type="a">
+<li><p>Pour afficher les options de la couche <code>Inv_forestier</code>, cliquer sur <strong>Layers</strong> dans le menu de gauche, puis sur la couche <code>Inv_forestier</code> (les options apparaissent dans le menu de droite).</p></li>
+<li><p>Dans l’onglet <strong>Styles</strong>, choisir <strong>+ Field</strong> et sélectionner le champ <code>Ess_arbre</code> (qui contient la liste d’espèces ligneuses).</p></li>
+<li><p>Dans la section <strong>2 - Pick a style</strong>, cliquer sur <strong>Style options</strong> et modifier la couleur des 3 symboles. Cliquer sur <strong>Done</strong>, puis <strong>Save</strong> pour conserver les modifications.</p></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ex1_styles_field.png" class="img-fluid figure-img"></p>
+<figcaption>Menu Layers → <code>Inv_forestier</code> → onglet <strong>Styles</strong> → <strong>+ Field</strong> (<code>Ess_arbre</code>) → <strong>Style options</strong>.</figcaption>
+</figure>
+</div>
+<ol start="8" type="a">
+<li>Retourner dans votre contenu ArcGIS Online : le feature layer doit se trouver dans le dossier <code>Exercice_1</code>.</li>
+</ol>
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>Questions ?</strong></p>
+</div>
+</div>
+</div>
+<hr>
+</section>
+</section>
+</section>
+<section id="sec-ex2" class="level1">
+<h1>Exercice 2 — Phénologie du sapin baumier</h1>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>ESRI FieldMaps &amp; Survey123</strong> — Parc national du Bic.</p>
+</div>
+</div>
+</div>
+<section id="contexte-et-objectifs" class="level2">
+<h2 class="anchored" data-anchor-id="contexte-et-objectifs">Contexte et objectifs</h2>
+<table class="caption-top table">
+<caption>Exercice 2 — objectif, étapes préliminaires et méthode</caption>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Objectif</th>
+<th>Étapes préliminaires</th>
+<th>Méthode</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Dans le Parc national du Bic, étudier la <strong>phénologie du sapin baumier</strong> dans des peuplements résineux à dominance de sapin baumier.</td>
+<td>1. À partir du plan de sondage, 7 sapinières ont été identifiées à échantillonner. 2. Dans chaque sapinière, sélectionner 3 individus de sapin baumier sur lesquels une sonde de température et une caméra seront installées ; mesurer le DHP et la hauteur de chaque arbre. 3. Créer un formulaire pour suivre les changements de batteries / cartes SD des caméras et des sondes en cours de saison.</td>
+<td>1. Visualiser le plan de sondage dans ArcGIS Pro et envoyer les données vers ArcGIS Online. 2. Intégrer le plan de sondage et créer un formulaire (feature class) dans FieldMaps Designer. 3. Dans Survey123, créer un formulaire simple de suivi (batteries, cartes SD, sondes).</td>
+</tr>
+</tbody>
+</table>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pres_ex2_materiel.png" class="img-fluid figure-img"></p>
+<figcaption>Matériel de terrain : sonde de température HOBO et caméra de chasse.</figcaption>
+</figure>
+</div>
+</section>
+<section id="énoncé-de-lexercice-1" class="level2">
+<h2 class="anchored" data-anchor-id="énoncé-de-lexercice-1">Énoncé de l’exercice</h2>
+<p>Dans ce deuxième exercice, on vous demande d’abord d’<strong>intégrer dans un projet ArcGIS FieldMaps</strong> votre plan de sondage créé dans ArcGIS Pro (une géodatabase vous est fournie), puis de créer un nouveau formulaire d’acquisition de données géospatiales dans <strong>FieldMaps Designer</strong> pour la saisie de données explicitement géospatiales sur le terrain.</p>
+<p>Le plan de sondage nous guide vers les sites sélectionnés en laboratoire, où l’on collecte ensuite des données ponctuelles et linéaires. Enfin, <strong>Survey123</strong> sert à créer un formulaire simple pour le suivi des échantillonnages en cours de saison.</p>
+<p><strong>Mise en contexte.</strong> Dans le cadre de votre projet de recherche, vous suivez le débourrement du sapin baumier dans le Parc national du Bic. Un plan de sondage de 7 sites potentiels (peuplements à dominance de sapin baumier) est déjà préparé.</p>
+<p>Lors de la première séquence de travail terrain, vous devez, dans chacun des 7 sites, trouver <strong>3 individus</strong> de sapin baumier sur lesquels vous installez une sonde de température « HOBO » (identifiant unique) et une caméra de chasse permettant de voir les bourgeons. La carte SD de chaque caméra possède aussi un identifiant unique. Chaque arbre sélectionné doit être mesuré (DHP et hauteur), géolocalisé, et ces données compilées dans un formulaire.</p>
+<p>Ensuite, le <strong>chemin d’accès</strong> au site doit être cartographié de la route jusqu’à chacun des 3 arbres, afin de spatialiser votre circuit pour les visites de suivi. Le formulaire de suivi (changements de cartes SD et de sondes « HOBO ») doit inclure l’identifiant unique de chaque sonde et de chaque carte SD, ainsi que la date de changement pour les 3 individus.</p>
+<p><strong>Fichiers nécessaires :</strong> point de sondage (<code>Ex2.gdb</code>) et polygone écoforestier clip (<code>Ex2.gdb</code>).</p>
+</section>
+<section id="étapes-1" class="level2">
+<h2 class="anchored" data-anchor-id="étapes-1">Étapes</h2>
+<section id="créer-un-dossier-exercice_2-dans-arcgis-online" class="level3">
+<h3 class="anchored" data-anchor-id="créer-un-dossier-exercice_2-dans-arcgis-online">1) Créer un dossier « Exercice_2 » dans ArcGIS Online</h3>
+<ol type="a">
+<li>Se connecter à ArcGIS Online : <a href="https://www.arcgis.com/index.html">https://www.arcgis.com/index.html</a>.</li>
+<li>Onglet <strong>Content</strong> → créer un dossier <strong><code>Exercice_2</code></strong>.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ex2_content_folder.png" class="img-fluid figure-img"></p>
+<figcaption>Onglet Content : création du dossier <code>Exercice_2</code>.</figcaption>
+</figure>
+</div>
+</section>
+<section id="ouvrir-arcgis-pro-et-importer-les-données-de-la-géodatabase" class="level3">
+<h3 class="anchored" data-anchor-id="ouvrir-arcgis-pro-et-importer-les-données-de-la-géodatabase">2) Ouvrir ArcGIS Pro et importer les données de la géodatabase</h3>
+<ol type="a">
+<li><p>Importer / visualiser les données :</p>
+<ol type="i">
+<li>Dans ArcGIS Pro, créer un nouveau projet <strong><code>Exercice_2</code></strong> dans un répertoire de votre choix sur le <code>C:/</code>.</li>
+<li>Dans une nouvelle <strong>Map</strong>, ajouter les deux couches de la géodatabase <code>Ex2.gdb</code> (dézippée) via <strong>Add data</strong>, puis visualiser les données.</li>
+<li>Sélectionner les deux couches en maintenant <strong>CTRL</strong> enfoncé — les deux couches doivent être en surbrillance.</li>
+</ol></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ex2_pro_select_layers.png" class="img-fluid figure-img"></p>
+<figcaption>ArcGIS Pro : les deux couches de <code>Ex2.gdb</code> en surbrillance.</figcaption>
+</figure>
+</div>
+<ol start="4" type="i">
+<li>Clic droit sur l’une des couches en surbrillance → <strong>Share as web layer</strong>. Dans le panneau de droite, indiquer <strong>Name</strong> = <code>Ex2_layers</code> et, sous <strong>Location</strong>, choisir le dossier <code>Exercice_2</code> créé dans ArcGIS Online.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ex2_pro_share_web.png" class="img-fluid figure-img"></p>
+<figcaption>ArcGIS Pro : <strong>Share as web layer</strong> (Name = <code>Ex2_layers</code>, Location = <code>Exercice_2</code>).</figcaption>
+</figure>
+</div>
+<ol start="22" type="a">
+<li>Cliquer sur <strong>Analyze</strong> puis <strong>Publish</strong> pour envoyer les couches vers votre contenu ArcGIS Online.</li>
+</ol>
+</section>
+<section id="créer-une-web-map-avec-les-données" class="level3">
+<h3 class="anchored" data-anchor-id="créer-une-web-map-avec-les-données">3) Créer une « Web map » avec les données</h3>
+<ol type="a">
+<li>Dans ArcGIS Online / Content, cliquer sur le feature layer <code>Ex2_layers</code> et l’ouvrir dans le <strong>Map Viewer</strong>.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ex2_open_mapviewer.png" class="img-fluid figure-img"></p>
+<figcaption>Ouvrir <code>Ex2_layers</code> dans le <strong>Map Viewer</strong>.</figcaption>
+</figure>
+</div>
+<ol start="2" type="a">
+<li>Une fois le Map Viewer ouvert, enregistrer la carte dans le dossier <code>Exercice_2</code> sous le nom <strong><code>Saisie_donnee_Bic</code></strong>.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ex2_save_webmap.png" class="img-fluid figure-img"></p>
+<figcaption>Enregistrer la carte <code>Saisie_donnee_Bic</code> dans <code>Exercice_2</code>.</figcaption>
+</figure>
+</div>
+<ol start="3" type="a">
+<li>De retour dans le contenu du dossier <code>Exercice_2</code>, cliquer sur la Web Map créée et l’ouvrir dans <strong>Field Maps Designer</strong>.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ex2_open_fmdesigner.png" class="img-fluid figure-img"></p>
+<figcaption>Ouvrir la Web Map dans <strong>Field Maps Designer</strong>.</figcaption>
+</figure>
+</div>
+</section>
+<section id="créer-un-nouveau-formulaire-dans-field-maps-designer" class="level3">
+<h3 class="anchored" data-anchor-id="créer-un-nouveau-formulaire-dans-field-maps-designer">4) Créer un nouveau formulaire dans « Field Maps Designer »</h3>
+<ol type="a">
+<li>Dans le bandeau de gauche, sélectionner l’onglet <strong>Forms</strong>, cliquer sur la flèche à droite de <strong>Add Layer</strong>, puis choisir <strong>Create layer</strong>.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ex2_fm_create_layer.png" class="img-fluid figure-img"></p>
+<figcaption>Field Maps Designer : <strong>Forms</strong> → flèche de <strong>Add Layer</strong> → <strong>Create layer</strong>.</figcaption>
+</figure>
+</div>
+<ol start="2" type="a">
+<li><p>Sous <strong>Layer name</strong> :</p>
+<ol type="i">
+<li>Inscrire <strong><code>Info_arbre_sonde</code></strong> en conservant <strong>Layer type</strong> = <em>Point Layer</em>.</li>
+<li>Cliquer sur le <strong>+</strong> pour ajouter une seconde couche <strong><code>Chemin_acces</code></strong> de type <em>Line layer</em>.</li>
+</ol></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ex2_fm_layers.png" class="img-fluid figure-img"></p>
+<figcaption>Couche <code>Info_arbre_sonde</code> (Point) + ajout de <code>Chemin_acces</code> (Line).</figcaption>
+</figure>
+</div>
+<ol start="3" type="a">
+<li>Avant la sauvegarde finale des 2 couches, donner le nom <strong><code>Donnee_terrain_Bic_2025</code></strong> au feature layer qui contient les 2 couches.</li>
+</ol>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Sélectionner le <strong>même dossier</strong> <code>Exercice_2</code>.</p>
+</div>
+</div>
+</section>
+<section id="création-du-formulaire-pour-chacune-des-deux-couches" class="level3">
+<h3 class="anchored" data-anchor-id="création-du-formulaire-pour-chacune-des-deux-couches">5) Création du formulaire pour chacune des deux couches</h3>
+<ol type="a">
+<li>Créer un formulaire pour chaque couche (la structure des données à recueillir sur le terrain). Utiliser les informations du descriptif du projet. Pour cela, sélectionner le type d’élément voulu dans le bandeau de droite et le glisser, dans l’ordre voulu, au centre.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ex2_fm_form_builder.png" class="img-fluid figure-img"></p>
+<figcaption>Field Maps Designer : construction du formulaire (glisser-déposer des éléments).</figcaption>
+</figure>
+</div>
+<ol start="2" type="a">
+<li><p>Liste des champs voulus pour la couche <strong><code>Info_arbre_sonde</code></strong> :</p>
+<ol type="i">
+<li>Identifiant de la placette</li>
+<li>Date — <em>le nom du champ doit être différent de « Date » (mot réservé)</em></li>
+<li>Identifiant de l’arbre (menu déroulant avec 5 noms prédéfinis)</li>
+<li>Diamètre à hauteur de poitrine (DHP)</li>
+<li>Hauteur de l’arbre</li>
+<li>Identifiant de la sonde HOBO</li>
+<li>Identifiant de la carte SD</li>
+</ol></li>
+<li><p>Pour la couche <strong><code>Chemin_acces</code></strong>, seul un champ qui répète l’identifiant de la placette est nécessaire.</p></li>
+</ol>
+</section>
+<section id="ouvrir-la-carte-et-saisir-des-données" class="level3">
+<h3 class="anchored" data-anchor-id="ouvrir-la-carte-et-saisir-des-données">6) Ouvrir la carte et saisir des données</h3>
+<p>Cliquer sur <strong>Sharing</strong> dans le bandeau de gauche, puis utiliser le <strong>code QR</strong> et l’appareil photo de votre cellulaire pour ouvrir la carte dans FieldMaps.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ex2_fm_qr.png" class="img-fluid figure-img"></p>
+<figcaption>Onglet <strong>Sharing</strong> : code QR pour ouvrir la carte dans FieldMaps.</figcaption>
+</figure>
+</div>
+</section>
+<section id="acquisition-de-données-dans-votre-projet-fieldmaps" class="level3">
+<h3 class="anchored" data-anchor-id="acquisition-de-données-dans-votre-projet-fieldmaps">7) Acquisition de données dans votre projet FieldMaps !</h3>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Il est important d’<strong>éteindre la fonction GPS</strong> de votre cellulaire pour cet atelier.</p>
+</div>
+</div>
+</section>
+<section id="partie-2-formulaire-de-suivi-sondes-hobo-et-cartes-sd" class="level3">
+<h3 class="anchored" data-anchor-id="partie-2-formulaire-de-suivi-sondes-hobo-et-cartes-sd">8) Partie 2 — Formulaire de suivi (sondes « HOBO » et cartes SD)</h3>
+<ol type="a">
+<li>Retourner dans ArcGIS Online et cliquer sur <strong>Survey123</strong> dans le lanceur d’applications (les 9 petits points).</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ex2_s123_open.png" class="img-fluid figure-img"></p>
+<figcaption>Lanceur d’applications → <strong>Survey123</strong>.</figcaption>
+</figure>
+</div>
+<ol start="2" type="a">
+<li>Dans ArcGIS Survey123, cliquer sur <strong>+ New survey</strong>…</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ex2_s123_newsurvey.png" class="img-fluid figure-img"></p>
+<figcaption>Survey123 : <strong>+ New survey</strong>.</figcaption>
+</figure>
+</div>
+<p>…puis sélectionner <strong>Blank Survey</strong>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ex2_s123_blank.png" class="img-fluid figure-img"></p>
+<figcaption>Survey123 : <strong>Blank Survey</strong>.</figcaption>
+</figure>
+</div>
+<ol start="3" type="a">
+<li><p>Dans Survey123, créer un formulaire <strong>non spatial</strong> qui permettra de suivre les changements de sondes « HOBO » et de cartes SD tout au long de la saison.</p></li>
+<li><p>Avant de commencer l’édition, cliquer dans l’entête pour :</p>
+<ol type="i">
+<li>Donner un <strong>nom</strong> à votre formulaire (au fichier).</li>
+<li>Donner un <strong>titre</strong> au formulaire.</li>
+<li>Ajouter une <strong>description</strong> qui facilitera la compréhension du formulaire.</li>
+</ol></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ex2_s123_header.png" class="img-fluid figure-img"></p>
+<figcaption>Survey123 : édition de l’entête (nom, titre, description).</figcaption>
+</figure>
+</div>
+<ol start="5" type="a">
+<li>Monter le formulaire, puis cliquer sur <strong>Publish</strong>.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ex2_s123_form.png" class="img-fluid figure-img"></p>
+<figcaption>Survey123 : formulaire de suivi → <strong>Publish</strong>.</figcaption>
+</figure>
+</div>
+<ol start="6" type="a">
+<li>Une fois publié, il est accessible via l’application mobile <strong>Survey123</strong>. Il est aussi possible d’enregistrer le <strong>code QR</strong> qui redirige vers l’application.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ex2_s123_qr.png" class="img-fluid figure-img"></p>
+<figcaption>Survey123 : code QR d’accès au formulaire.</figcaption>
+</figure>
+</div>
+<ol start="7" type="a">
+<li>Démonstration directement sur l’application !</li>
+<li>Visualiser / exporter les données dans la table.</li>
+</ol>
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>Questions ?</strong></p>
+</div>
+</div>
+</div>
+<hr>
+</section>
+</section>
+</section>
+<section id="sec-ex3" class="level1">
+<h1>Exercice 3 — Inventaire forestier</h1>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>QuickCapture &amp; Survey123</strong> — Côte-Nord, dommages de la TBE (tordeuse des bourgeons de l’épinette).</p>
+</div>
+</div>
+</div>
+<section id="contexte-et-objectifs-1" class="level2">
+<h2 class="anchored" data-anchor-id="contexte-et-objectifs-1">Contexte et objectifs</h2>
+<table class="caption-top table">
+<caption>Exercice 3 — objectif, étapes préliminaires et méthode</caption>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Objectif</th>
+<th>Étapes préliminaires</th>
+<th>Méthode</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sur la Côte-Nord, évaluer les dommages causés par la <strong>TBE</strong> sur ses 3 espèces-hôtes. Dans une placette de 1 ha, inventorier l’ensemble de ces arbres (sapin baumier, épinette noire, épinette blanche) et évaluer leur niveau de défoliation.</td>
+<td>1. Dans une placette de 100 m × 100 m, géolocaliser l’ensemble des hôtes de la TBE et évaluer leur niveau de défoliation. 2. Pour chaque arbre : coordonnée XY, DHP, niveau de défoliation cumulée. 3. Numériser un chemin d’accès vers la placette et tracer son périmètre (empreinte générale de la placette).</td>
+<td>1. Création de feature layers dont les champs serviront à générer un formulaire QuickCapture. 2. <strong>Ex. 3a</strong> : paramétrage du formulaire QuickCapture (règles de validation, types de boutons). 3. <strong>Ex. 3b</strong> : Survey123 &amp; Survey123 Connect — créer un formulaire d’inventaire similaire, où les arbres ne sont <strong>pas</strong> géolocalisés.</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Ouvrir les fichiers</strong> <code>Ex3a_Inventaire_forestier</code> et <code>Ex3b_Inventaire_forestier</code> — repris intégralement ci-dessous.</p>
+</div>
+</div>
+</section>
+<section id="énoncé-général" class="level2">
+<h2 class="anchored" data-anchor-id="énoncé-général">Énoncé général</h2>
+<p>On vous demande de créer un formulaire <strong>QuickCapture</strong> qui permet la collecte de données <strong>ponctuelles, linéaires et surfaciques</strong> dans une même application. Dans ce projet, vous connaissez la localisation du peuplement à échantillonner, mais pas encore celle des arbres ni du centre exact de la placette. Vous savez où stationner le long du chemin, mais le chemin d’accès n’est pas encore tracé.</p>
+<p><strong>Partie 1 — QuickCapture.</strong> Utiliser le <em>feature class</em> créé à l’exercice 1 pour générer et configurer une application ArcGIS QuickCapture dans laquelle :</p>
+<ul>
+<li>la <strong>1re section</strong> compile les données générales de la placette : identifiant, coordonnées XY, date, altitude, orientation de la pente (aspect) ;</li>
+<li>la <strong>2e section</strong> géolocalise les arbres et compile les données d’inventaire des espèces susceptibles à la TBE (dont DHP et niveau de défoliation) ;</li>
+<li>la <strong>3e section</strong> numérise le chemin d’accès (ligne) et le contour de la placette (polygone).</li>
+</ul>
+<p><strong>Partie 2 — Survey123.</strong> En inventaire forestier, il n’est pas toujours nécessaire de géolocaliser individuellement les arbres si l’on s’intéresse plutôt au volume de bois ou à la surface terrière par espèce à l’échelle du peuplement (comme dans la carte écoforestière). Nous verrons comment remplacer les sections « données générales » et « inventaire des arbres » de QuickCapture par un formulaire créé dans Survey123. Au terme de l’exercice, il sera possible de comparer les avantages de chaque application pour un inventaire forestier.</p>
+</section>
+<section id="sec-ex3a" class="level2">
+<h2 class="anchored" data-anchor-id="sec-ex3a">Partie 1 — QuickCapture (Ex. 3a)</h2>
+<p><strong>Fichiers nécessaires :</strong> <code>Placette_inv_CN2025</code> (feature layer de l’exercice 1) — couches <code>Donnee_generale</code>, <code>Inv_forestier</code>, <code>Chemin_acces</code>, <code>Contour_p</code>.</p>
+<section id="à-partir-de-votre-compte-arcgis-online" class="level3">
+<h3 class="anchored" data-anchor-id="à-partir-de-votre-compte-arcgis-online">1) À partir de votre compte ArcGIS Online</h3>
+<p>A. Créer un nouveau dossier <strong><code>Exercice_3</code></strong>. Aller dans le dossier <code>Exercice_1</code> et <strong>copier son contenu</strong> dans <code>Exercice_3</code>. B. Ouvrir le lanceur d’applications (9 petits points) et lancer <strong>QuickCapture</strong>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ex3a_launcher_qc.png" class="img-fluid figure-img"></p>
+<figcaption>Lanceur d’applications → <strong>QuickCapture</strong>.</figcaption>
+</figure>
+</div>
+<p>C. Dans <strong>ArcGIS QuickCapture app Designer</strong>, cliquer sur <strong>+ New Project</strong> puis <strong>Start from existing layers</strong>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ex3a_new_project.png" class="img-fluid figure-img"></p>
+<figcaption>QuickCapture Designer : <strong>+ New Project</strong> → <strong>Start from existing layers</strong>.</figcaption>
+</figure>
+</div>
+<p>D. Sous <strong>My layers</strong>, sélectionner le feature layer créé à l’exercice 1 : <strong><code>Placette_inv_CN2025</code></strong>. Dans la fenêtre contextuelle en bas de page, s’assurer que <strong>Create buttons from layer symbology</strong> est sélectionné, puis cliquer sur <strong>Next</strong>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ex3a_pick_layer.png" class="img-fluid figure-img"></p>
+<figcaption>QuickCapture : sélection de <code>Placette_inv_CN2025</code> + <strong>Create buttons from layer symbology</strong>.</figcaption>
+</figure>
+</div>
+<p>E. Dans la fenêtre <strong>Create Project</strong>, donner le titre <strong><code>Inventaire_TBE_2025</code></strong> et enregistrer le projet dans le dossier <code>Exercice_3</code> (plutôt que <code>Root</code>).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ex3a_create_project.png" class="img-fluid figure-img"></p>
+<figcaption>QuickCapture : <strong>Create Project</strong> (<code>Inventaire_TBE_2025</code>, dossier <code>Exercice_3</code>).</figcaption>
+</figure>
+</div>
+</section>
+<section id="éléments-du-arcgis-quickcapture-designer" class="level3">
+<h3 class="anchored" data-anchor-id="éléments-du-arcgis-quickcapture-designer">2) Éléments du ArcGIS QuickCapture Designer</h3>
+<p>L’énumération suivante fait référence à l’image ci-dessous.</p>
+<p>A. <strong>Messages</strong> — messages d’erreur et avertissements. <em>Prenez le temps de les lire et de les comprendre !</em> Il est impossible de sauvegarder l’application tant que des messages d’erreur sont actifs. B. <strong>Paramètres de l’application</strong></p>
+<ol type="i">
+<li>Type d’appareil sur lequel l’application sera utilisée (meilleure disposition des boutons).</li>
+<li>Paramètres généraux : couleur d’arrière-plan, tolérance GPS, taille des photos.</li>
+<li><strong>Manage project layer</strong> — modifier le(s) feature layer(s) utilisé(s).</li>
+<li><strong>Configure map project</strong>.</li>
+<li><strong>Additional settings</strong> : <em>Project details, Project user inputs, Button user inputs</em>, etc.</li>
+</ol>
+<p>C. Section pour <strong>paramétrer chacun des boutons</strong> de saisie. D. <strong>Aperçu</strong> de l’application finale.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ex3a_designer_overview.png" class="img-fluid figure-img"></p>
+<figcaption>Vue d’ensemble annotée du QuickCapture Designer (A. Messages, B. Paramètres, C. Boutons, D. Aperçu).</figcaption>
+</figure>
+</div>
+</section>
+<section id="configurer-lapplication-paramètres-généraux-et-additionnels" class="level3">
+<h3 class="anchored" data-anchor-id="configurer-lapplication-paramètres-généraux-et-additionnels">3) Configurer l’application — paramètres généraux et additionnels</h3>
+<p>A. Régler l’affichage selon l’appareil utilisé lors de la campagne d’échantillonnage. B. Dans les paramètres généraux, choisir une couleur de fond. C. Dans l’onglet <strong>Map</strong>, conserver le fond de carte par défaut (<em>Topographic</em>). D. Dans <strong>Additional settings → Project details</strong> :</p>
+<ol type="i">
+<li>Modifier le titre (enlever les <em>underscores</em>) ;</li>
+<li>Valider l’adresse courriel de référence ;</li>
+<li>Ajouter une description (surtout si d’autres personnes utiliseront l’application).</li>
+</ol>
+</section>
+<section id="configurer-les-sections-de-lapplication" class="level3">
+<h3 class="anchored" data-anchor-id="configurer-les-sections-de-lapplication">4) Configurer les sections de l’application</h3>
+<p>A. Cliquer directement sur le nom de chaque section pour configurer son apparence :</p>
+<ol type="i">
+<li>Sous <strong>Label</strong>, renommer en <strong>« Données générales »</strong> ;</li>
+<li>Conserver <strong>une seule colonne</strong> ;</li>
+<li>Enlever l’option <strong>Make group collapsible</strong> ;</li>
+<li>Mettre une couleur de bordure apparente par rapport au fond choisi ;</li>
+<li>Répéter pour les <strong>4 sections</strong>. <em>Pour le groupe « Inventaire forestier », mettre 3 colonnes.</em></li>
+</ol>
+</section>
+<section id="configurer-les-boutons-et-la-saisie-de-données" class="level3">
+<h3 class="anchored" data-anchor-id="configurer-les-boutons-et-la-saisie-de-données">5) Configurer les boutons et la saisie de données</h3>
+<p><strong>A. Groupe « Données générales » — section <em>Appearance</em></strong></p>
+<ol type="i">
+<li>Cliquer sur le bouton <strong>New Feature</strong> pour ouvrir le menu de droite.</li>
+<li>Sous <strong>Label</strong>, définir le texte affiché sous le bouton : <strong>« Coordonnées au centre de la placette »</strong>.</li>
+<li>Régler taille, forme, couleur, bordure et <strong>icône</strong> du bouton.</li>
+</ol>
+<p><strong>B. Groupe « Données générales » — section <em>Data</em></strong></p>
+<ol type="i">
+<li>Cette section configure les actions du bouton.</li>
+<li>Valider le <strong>Target feature layer</strong> (devrait être <code>Donnee_generale</code>).</li>
+<li><strong>Capture mode</strong> : <em>Single point</em>. Ne pas activer <em>Show map after capture</em> ni <em>Show camera</em>.</li>
+<li><strong>Capture fields</strong> : 1. <code>ID_placette</code> : dans le menu déroulant <strong>Project user inputs</strong>, créer un nouveau <em>Project user input</em> nommé <strong>« Identifiant unique de la placette »</strong>, de type <em>Single line text</em>, avec <strong>This is a required user input</strong> activé. Activer aussi <strong>Apply hint</strong> et inscrire <strong>« Format requis : P001 »</strong>. 2. Les champs <code>X_p</code>, <code>Y_p</code>, <code>Altitude</code>, <code>Aspect</code> et <code>Date_inv</code> doivent tous être des <strong>Device variables</strong>. 3. Pour chacun, sélectionner le type de donnée correspondant dans le menu déroulant de droite. 4. <em>Explication</em> : à l’ouverture, l’application demande automatiquement l’identifiant unique de la placette (avec exemple de format). Ce champ implémente <code>ID_placette</code> dans chacun des feature layers.</li>
+</ol>
+<p><strong>C. Groupe « Inventaire forestier »</strong></p>
+<ol type="i">
+<li><em>Appearance</em> — Label : <strong>« Sapin baumier »</strong> ; Colors : vert foncé ; Image : icône d’arbre.</li>
+<li><em>Data</em> : 1. Valider le <strong>Target feature layer</strong>. 2. <code>ID_placette</code> : <strong>Project user inputs</strong> → <em>Identifiant unique</em>. 3. <code>Ess_arbre</code> : sélectionner <strong>« Sapin baumier »</strong> dans le menu déroulant. 4. <code>DHP</code> : <strong>Button user inputs</strong> → « Diamètre à hauteur de poitrine », <em>required user input</em>, <em>End of capture</em> → <strong>Create</strong>. 5. <code>Nv_defo</code> : <strong>Button user inputs</strong> → « Niveau de défoliation », <em>required user input</em>, <em>End of capture</em> → <strong>Create</strong>. 6. <em>Explication</em> : <code>ID_placette</code> est rempli automatiquement par le <em>Project user input</em> ; « Sapin baumier » est inscrit automatiquement dans <code>Ess_arbre</code> ; <code>DHP</code> et <code>Nv_defo</code> sont ensuite remplis par des fenêtres contextuelles successives.</li>
+<li>Pour créer le prochain bouton, utiliser la fonction <strong>Duplicate</strong>.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ex3a_duplicate_button.png" class="img-fluid figure-img"></p>
+<figcaption>QuickCapture : fonction <strong>Duplicate</strong> pour dupliquer un bouton.</figcaption>
+</figure>
+</div>
+<ol start="4" type="i">
+<li>Répéter pour créer un bouton <strong>« Épinette noire »</strong> et un bouton <strong>« Épinette blanche »</strong>.</li>
+</ol>
+<p><strong>D. Groupe « Chemin d’accès »</strong></p>
+<ol type="i">
+<li><em>Appearance</em> — Label : « Appuyer pour commencer et arrêter la saisie du chemin » ; Colors : au choix ; Image : icône de sentier / tracé.</li>
+<li><em>Data</em> — valider le <strong>Target feature layer</strong> ; <code>ID_placette</code> : <strong>Project user inputs</strong>.</li>
+</ol>
+<p><strong>E. Groupe « Contour de la placette »</strong></p>
+<ol type="i">
+<li><em>Appearance</em> — Label : « Appuyer pour commencer et arrêter la saisie du contour » ; Colors : au choix ; Image : icône de polygone / surface.</li>
+<li><em>Data</em> — valider le <strong>Target feature layer</strong> ; <code>ID_placette</code> : <strong>Project user inputs</strong>.</li>
+</ol>
+</section>
+<section id="sauvegarder-et-utiliser-lapplication" class="level3">
+<h3 class="anchored" data-anchor-id="sauvegarder-et-utiliser-lapplication">6) Sauvegarder et utiliser l’application</h3>
+<p>A. Sauvegarder le projet et définir les options de partage. B. Enregistrer le <strong>code QR</strong> si nécessaire. C. Ouvrir l’application QuickCapture sur votre appareil mobile, appuyer sur le <strong>+</strong> en bas de l’écran pour scanner le QR (ou sélectionner parmi vos applications QuickCapture associées à votre compte).</p>
+</section>
+</section>
+<section id="sec-ex3b" class="level2">
+<h2 class="anchored" data-anchor-id="sec-ex3b">Partie 2 — Survey123 (Ex. 3b)</h2>
+<p><strong>Fichiers nécessaires :</strong> <code>Donnee_generale</code>, <code>Inv_forestier</code>, et <code>Base_donnee_EX1_EX3.xlsx</code>.</p>
+<section id="à-partir-de-votre-compte-arcgis-online-1" class="level3">
+<h3 class="anchored" data-anchor-id="à-partir-de-votre-compte-arcgis-online-1">1) À partir de votre compte ArcGIS Online</h3>
+<p>A. Ouvrir le lanceur d’applications (9 petits points) et lancer <strong>Survey123</strong>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ex3b_launcher_s123.png" class="img-fluid figure-img"></p>
+<figcaption>Lanceur d’applications → <strong>Survey123</strong>.</figcaption>
+</figure>
+</div>
+<p>B. Dans ArcGIS Survey123, cliquer sur <strong>+ New survey</strong> puis <strong>Blank survey</strong>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ex3b_new_blank.png" class="img-fluid figure-img"></p>
+<figcaption>Survey123 : <strong>+ New survey</strong> → <strong>Blank survey</strong>.</figcaption>
+</figure>
+</div>
+<p>C. <strong>Création du formulaire de base</strong></p>
+<ol type="i">
+<li>À l’ouverture de l’éditeur, remplir la section <strong>Survey info</strong> puis le <strong>header</strong> du formulaire. <em>Choisir un <strong>nom</strong> pour le formulaire (Survey info = information affichée dans l’application mobile), puis un <strong>titre</strong> (affiché à l’ouverture de l’application).</em></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ex3b_survey_info.png" class="img-fluid figure-img"></p>
+<figcaption>Survey123 : section <strong>Survey info</strong> + entête du formulaire.</figcaption>
+</figure>
+</div>
+<ol start="2" type="i">
+<li>À l’aide du fichier <code>Base_donnee_EX1_EX3.xlsx</code> (onglets <code>Donnee_generale</code> et <code>Inv_forestier</code>), construire un formulaire à <strong>2 groupes</strong> : 1. Le <strong>1er groupe</strong> compile les données générales de la placette, incluant la coordonnée centrale. <strong>⚠️ Important :</strong> portez une attention particulière aux champs demandés — Survey123 ne permet pas nécessairement de collecter exactement les mêmes données que QuickCapture. 2. Le <strong>2e groupe</strong> compile les données d’inventaire des arbres hôtes de la TBE et doit comporter un <strong>menu déroulant / liste de choix</strong> pour les 3 espèces hôtes. 3. Types d’éléments impliqués : <em>Date, Slider, Single line text, Single select / Dropdown, Map</em> (usage non obligatoire). 4. Une fois complété, <strong>enregistrer</strong> puis <strong>publier</strong> le formulaire.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ex3b_form_groups.png" class="img-fluid figure-img"></p>
+<figcaption>Survey123 : formulaire à 2 groupes (données générales + inventaire des arbres).</figcaption>
+</figure>
+</div>
+<p>D. Tester le formulaire dans l’application.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -205,17 +1320,128 @@ Astuce
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>[ astuce ou note pratique pour les participants ]</p>
+<p><strong>Question 1</strong> — Est-il possible de faire la collecte de plus d’un type de géométrie dans l’application ?</p>
 </div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Astuce
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Question 2</strong> — Qu’est-ce qui manque à notre formulaire pour réaliser un inventaire forestier complet ? Votre formulaire permet-il de compiler plusieurs données d’inventaire d’arbres, ou la saisie est-elle limitée à 1 arbre à la fois ?</p>
+</div>
+</div>
+<p>E. <strong>Édition avancée du formulaire</strong></p>
+<ol type="i">
+<li>Sur votre ordinateur, ouvrir <strong>ArcGIS Survey123 Connect</strong> et y connecter votre compte.</li>
+<li>Télécharger le formulaire que vous venez de créer dans le Survey123 designer en ligne.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ex3b_connect_download.png" class="img-fluid figure-img"></p>
+<figcaption>Survey123 Connect : téléchargement du formulaire créé en ligne.</figcaption>
+</figure>
+</div>
+<ol start="3" type="i">
+<li>Cliquer sur l’icône du formulaire pour en faire l’édition.</li>
+</ol>
+<p>F. <strong>Fonctionnalités de ArcGIS Survey123 Connect</strong></p>
+<ol type="i">
+<li>Passer en revue les options du <strong>ruban inférieur</strong> (options du formulaire).</li>
+<li>Passer en revue les options du <strong>ruban gauche</strong>.</li>
+</ol>
+<p>G. <strong>« One to many »</strong></p>
+<ol type="i">
+<li>Ajouter la fonction <strong>repeat</strong> dans le formulaire.</li>
+<li>Cliquer sur <strong>XLSForm</strong>.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ex3b_xlsform.png" class="img-fluid figure-img"></p>
+<figcaption>Survey123 Connect : bouton <strong>XLSForm</strong> (structure <code>.xlsx</code> du formulaire).</figcaption>
+</figure>
+</div>
+<ol start="3" type="i">
+<li>À l’ouverture du fichier <code>.xlsx</code>, visualiser la structure sous-jacente du formulaire (notamment l’onglet <strong>choices</strong> pour construire une liste — ajoutez une espèce de plus à la liste).</li>
+<li>Dans l’onglet <strong>survey</strong>, insérer une nouvelle rangée sous la rangée <code>begin group</code> reliée au groupe <em>Inventaire forestier</em>.</li>
+<li>Sous le champ <strong>type</strong>, choisir <strong>begin repeat</strong> (rangée 12 dans l’exemple) :
+<ol type="1">
+<li><strong>name</strong> : <code>Repetition</code></li>
+<li><strong>label</strong> : « Saisir un arbre »</li>
+</ol></li>
+<li>Sous <strong>type</strong>, choisir <strong>end repeat</strong> (rangée 17 dans l’exemple).</li>
+<li>Sauvegarder et fermer le fichier <code>.xlsx</code>.</li>
+<li>Dans Survey123 Connect, appuyer sur <strong>Mettre à jour</strong> (<em>Update</em>).</li>
+<li>Retourner dans l’application mobile et mettre à jour l’application.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ex3b_repeat_rows.png" class="img-fluid figure-img"></p>
+<figcaption>XLSForm : ajout de <code>begin repeat</code> / <code>end repeat</code> autour du groupe Inventaire forestier.</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Astuce
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Question 3</strong> — Expliquez ce qui a changé dans l’application.</p>
+</div>
+</div>
+<p><strong>FIN !</strong></p>
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>Questions ?</strong></p>
+</div>
+</div>
+</div>
+<hr>
+</section>
+</section>
+</section>
+<section id="sec-fin" class="level1">
+<h1>Fin de l’atelier</h1>
+<p>Pour toutes questions sur vos projets de recherche, les professionnels de recherche du CEF sont là ! Voici le lien pour voir « qui fait quoi » : <a href="https://www.cef-cfr.ca/pmwiki.php?n=Membres.Accueil#profrech">cef-cfr.ca — Professionnels de recherche</a>.</p>
+<section id="temps-libre" class="level2">
+<h2 class="anchored" data-anchor-id="temps-libre">Temps libre</h2>
+<p><strong>Tester les applications et poser des questions !</strong></p>
+</section>
+<section id="votre-prochain-défi" class="level2">
+<h2 class="anchored" data-anchor-id="votre-prochain-défi">Votre prochain défi</h2>
+<p><strong>Intégrer vos données dans un ArcGIS Dashboard.</strong></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pres_dashboard.png" class="img-fluid figure-img"></p>
+<figcaption>Exemple d’ArcGIS Dashboard intégrant des données terrain.</figcaption>
+</figure>
 </div>
 </section>
-<section id="exercices-supplémentaires" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="exercices-supplémentaires"><span class="header-section-number">3</span> Exercices supplémentaires</h2>
-<ol type="a">
-<li>[ contenu à compléter ]</li>
-</ol>
+<section id="synthèse" class="level2">
+<h2 class="anchored" data-anchor-id="synthèse">Synthèse</h2>
+<p>Séance d’information des outils ESRI — comparaison des fondamentaux (<em>Survey123 / FieldMaps / QuickCapture</em>).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pres_synthese_table.png" class="img-fluid figure-img"></p>
+<figcaption>Tableau « Comparison of fundamentals » (documentation ESRI). Voir aussi la version française plus haut, dans l’introduction.</figcaption>
+</figure>
+</div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

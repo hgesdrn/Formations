@@ -10,14 +10,15 @@ website:
   page-navigation: true
   navbar:
     background: primary
+    logo: images/logo_CEF.png
     left:
       - text: "Accueil"
         href: index.qmd
       - text: "Formations"
         menu:
-          - text: "Atelier — Création d'une carte dans ArcGIS Pro"
+          - text: "Atelier - Création d'une carte dans ArcGIS Pro"
             href: atelier-creation-carte/index.qmd
-          - text: "Atelier — Applications terrain"
+          - text: "Atelier - Applications terrain"
             href: atelier-applications-terrain/index.qmd
   page-footer:
     left: "© Hugues Dorion"
@@ -25,7 +26,9 @@ website:
 
 format:
   html:
-    theme: cosmo
+    theme:
+      - cosmo
+      - theme.scss
     toc: true
     toc-title: "Sur cette page"
     toc-depth: 3

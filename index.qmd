@@ -1,16 +1,6 @@
 ---
 title: "Formations"
 subtitle: "Ateliers et formations"
-format:
-  html:
-    theme: cosmo
-    include-in-header:
-      text: |
-        <style>
-        body {
-          background-color: #82878c;
-        }
-        </style>
 ---
 
 Chaque formation ci-dessous est **autonome** : son propre dossier, son
