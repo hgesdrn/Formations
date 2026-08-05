@@ -4,6 +4,16 @@ Site web regroupant mes formations et ateliers, construit avec
 [Quarto](https://quarto.org). Chaque formation est **autonome** et peut
 être donnée séparément.
 
+## 🌐 Consulter les formations en ligne
+
+Le site est publié ici : **<https://hgesdrn.github.io/Formations/>**
+
+| Formation | Lien direct |
+|---|---|
+| Atelier — Création d'une carte dans ArcGIS Pro | <https://hgesdrn.github.io/Formations/atelier-creation-carte/> |
+| Atelier — Applications terrain | <https://hgesdrn.github.io/Formations/atelier-applications-terrain/> |
+
+
 ## Structure
 
 ```
