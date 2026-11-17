@@ -30,6 +30,16 @@ QuickCapture à travers des exercices pratiques.
 :::
 :::
 
+::: {.card .mb-3}
+::: {.card-body}
+### [App — Indices spectraux et perturbations](indices-spectraux/index.html)
+
+Application de démonstration : effet du satellite (Landsat 8/9, Sentinel-2),
+de l'indice spectral, de l'occupation du sol et des perturbations en forêt
+boréale (feu, TBE, livrée des forêts, coupe, chablis) sur la réflectance.
+:::
+:::
+
 ::: {.callout-note}
 Pour ajouter une formation : créez un nouveau dossier à la racine avec un
 `index.qmd`, puis ajoutez une carte ci-dessus et une entrée au menu dans

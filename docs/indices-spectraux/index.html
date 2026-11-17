@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Indices spectraux</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Indices spectraux et perturbations en forêt boréale</h1>
+  </header>
+
+  <main>
+    <section class="left">
+      <div class="controls">
+        <div class="field">
+          <span class="lbl">Satellite</span>
+          <div class="seg" id="sensor">
+            <button data-v="landsat">Landsat 8 / 9</button>
+            <button data-v="sentinel2">Sentinel-2</button>
+          </div>
+        </div>
+        <label class="field">
+          <span class="lbl">Indice</span>
+          <select id="index"></select>
+        </label>
+        <label class="field">
+          <span class="lbl">Perturbation</span>
+          <select id="disturbance"></select>
+        </label>
+        <label class="field">
+          <span class="lbl">Occupation du sol</span>
+          <select id="cls"></select>
+        </label>
+        <label class="field wide">
+          <span class="lbl">Sévérité <output id="sevOut"></output></span>
+          <input type="range" id="severity" min="0" max="100" step="5" value="100">
+        </label>
+      </div>
+
+      <div class="charts">
+        <figure class="card" id="chartBefore"></figure>
+        <figure class="card" id="chartAfter"></figure>
+      </div>
+    </section>
+
+    <section class="right">
+      <div class="maphead">
+        <div class="seg" id="view">
+          <button data-v="index">Indice</button>
+          <button data-v="cls">Occupation</button>
+        </div>
+        <span id="scale" class="muted"></span>
+      </div>
+      <div class="maps">
+        <div class="half">
+          <div class="tag" id="tagBefore"></div>
+          <canvas id="mapBefore"></canvas>
+        </div>
+        <div class="half">
+          <div class="tag" id="tagAfter"></div>
+          <canvas id="mapAfter"></canvas>
+        </div>
+      </div>
+      <div class="legend" id="legend"></div>
+    </section>
+  </main>
+
+  <footer class="muted">Réflectances illustratives (ordres de grandeur de la littérature) · paysage fictif</footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
