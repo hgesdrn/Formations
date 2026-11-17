@@ -3,6 +3,9 @@ project:
   output-dir: docs   # GitHub Pages servira le site depuis ce dossier
   resources:
     - .nojekyll      # empêche GitHub Pages de relancer Jekyll sur le site déjà rendu
+    - indices-spectraux/*.html   # app HTML autonome, copiée telle quelle
+    - indices-spectraux/*.js
+    - indices-spectraux/*.css
 
 website:
   title: "Formations"
@@ -20,6 +23,8 @@ website:
             href: atelier-creation-carte/index.qmd
           - text: "Atelier - Applications terrain"
             href: atelier-applications-terrain/index.qmd
+          - text: "App - Indices spectraux et perturbations"
+            href: indices-spectraux/index.html
   page-footer:
     left: "© Hugues Dorion"
     right: "Réalisé avec [Quarto](https://quarto.org)"

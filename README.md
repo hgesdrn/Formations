@@ -12,6 +12,7 @@ Le site est publié ici : **<https://hgesdrn.github.io/Formations/>**
 |---|---|
 | Atelier — Création d'une carte dans ArcGIS Pro | <https://hgesdrn.github.io/Formations/atelier-creation-carte/> |
 | Atelier — Applications terrain | <https://hgesdrn.github.io/Formations/atelier-applications-terrain/> |
+| App — Indices spectraux et perturbations | <https://hgesdrn.github.io/Formations/indices-spectraux/> |
 
 
 ## Structure
